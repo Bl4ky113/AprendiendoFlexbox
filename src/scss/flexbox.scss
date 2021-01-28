@@ -43,18 +43,20 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
  padding-left: 10px;
 
  background-color: $color_white1;
+
+ /* Flex Properties */
+ display: flex; /* Flex */
+ align-items: flex-start;
 }
 
 /* ----- Index of the Document ----- */
 .main-index {
  width: 300px;
 
- margin-right: 20px;
+ margin-right: 5px;
  margin-left: 5px;
  border-radius: 0.5em;
  padding: 10px;
-
- float: left;
 
  background-color: $color_base1;
 
@@ -77,6 +79,11 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
   background-color: $color_base2;
 
   box-shadow: $shadow_box-bottomRight;
+
+  /* Flex Properties */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   .index-list__title {
    padding-inline-start: 25px;
@@ -134,6 +141,87 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
  }
 }
 
+
+/* ----- Section - Inicio Flexbox ----- */
+
+.main-inicio {
+ margin: 5px 10px;
+
+ /* Flex Properties */
+ flex-grow: 5;
+
+ /* Articles in the section */ 
+ .inicio-article{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  /* title of the article */
+  .inicio-article__title {
+   width: 500px;
+
+   margin-inline-start: 5px;
+   border-top-left-radius: 0.5em;
+   border-top-right-radius: 0.5em;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-inline-start: 15px;
+
+   background-color: $color_dark1;
+
+   color: $color_white1;
+   font-size: 32px;
+   font-weight: 800;
+   text-shadow: $shadow_text-bottomRight;
+
+   display: inline-block;
+  }
+
+  /* --- Content of the article --- */
+  .article-content {
+   border: 3px outset $color_dark1;
+   border-radius: 0.25em;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 5px;
+   padding-left: 5px;
+
+   text-align: justify;
+
+   .content-paragraph {
+    padding-left: 5px;
+    
+    color: $color_black1;
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 1.25;
+    text-align-last: left;
+
+    /* Semantic Tags in the paragraph */
+
+    abbr{
+     padding: 0 2px;
+
+     font-weight: 1000;
+     text-decoration: underline $color_dark1 solid;
+
+     &:hover {
+      border-radius: 0.25em;
+
+      background-color: $color_light1;
+     }
+    }
+
+    i{
+     font-size: 18px;
+    }
+    strong {
+     font-weight: 1000;
+     text-decoration: underline $color_base1 solid 1px;
+    }
+   }
+  } 
+ }
+}
 
 
 /*

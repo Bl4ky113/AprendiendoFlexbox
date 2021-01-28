@@ -20,16 +20,19 @@
   padding-right: 10px;
   padding-left: 10px;
   background-color: #fefefe;
+  /* Flex Properties */
+  display: flex;
+  /* Flex */
+  align-items: flex-start;
 }
 
 /* ----- Index of the Document ----- */
 .main-index {
   width: 300px;
-  margin-right: 20px;
+  margin-right: 5px;
   margin-left: 5px;
   border-radius: 0.5em;
   padding: 10px;
-  float: left;
   background-color: #1510dd;
   box-shadow: 2px 1px 4px #343434;
   /* Title of the Index */
@@ -46,6 +49,10 @@
   padding: 5px;
   background-color: #009dff;
   box-shadow: 2px 1px 4px #343434;
+  /* Flex Properties */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   /* Objects in the list "ol > li" */
 }
 .main-index .index-list .index-list__title {
@@ -83,6 +90,69 @@
   padding: 5px;
   color: #f0f0f0;
   display: inline-block;
+}
+
+/* ----- Section - Inicio Flexbox ----- */
+.main-inicio {
+  margin: 5px 10px;
+  /* Flex Properties */
+  flex-grow: 5;
+  /* Articles in the section */
+}
+.main-inicio .inicio-article {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* title of the article */
+  /* --- Content of the article --- */
+}
+.main-inicio .inicio-article .inicio-article__title {
+  width: 500px;
+  margin-inline-start: 5px;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-inline-start: 15px;
+  background-color: #000080;
+  color: #fefefe;
+  font-size: 32px;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #343434;
+  display: inline-block;
+}
+.main-inicio .inicio-article .article-content {
+  border: 3px outset #000080;
+  border-radius: 0.25em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: justify;
+}
+.main-inicio .inicio-article .article-content .content-paragraph {
+  padding-left: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 1.25;
+  text-align-last: left;
+  /* Semantic Tags in the paragraph */
+}
+.main-inicio .inicio-article .article-content .content-paragraph abbr {
+  padding: 0 2px;
+  font-weight: 1000;
+  text-decoration: underline #000080 solid;
+}
+.main-inicio .inicio-article .article-content .content-paragraph abbr:hover {
+  border-radius: 0.25em;
+  background-color: #80d4ff;
+}
+.main-inicio .inicio-article .article-content .content-paragraph i {
+  font-size: 18px;
+}
+.main-inicio .inicio-article .article-content .content-paragraph strong {
+  font-weight: 1000;
+  text-decoration: underline #1510dd solid 1px;
 }
 
 /*

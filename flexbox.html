@@ -5,39 +5,72 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="author" content="Bl4ky113">
  <title>Aprendiendo Flexbox</title>
+ <link rel="stylesheet" href="src/css/flexbox.css">
 </head>
-<body>
+<body class="doc">
 
- <header class="doc-header">
-  <h1> Flexbox </h1>
-  <p>Guia y notas de Flexbox de Bl4ky113</p>
- </header>
+<!-- Header -->
+<header class="doc-header">
+ <h1> Flexbox </h1>
+ <p>Guia y notas de Flexbox de Bl4ky113</p>
+</header>
 
- <hr>
+<main class="doc-main">
+  <!-- inidice -->
+  <section class="main-index">
+    <h2 class="main-index__title">Indice</h2>
+    <ol class="index-list">
+      <h3 class="index-list__title">Inicio</h3>
+      <li class="list-object">
+        <a class="list-object__link" href="#QueEsInicio">Que es Flexbox</a>
+      </li>
+      <li class="list-object">
+        <a class="list-object__link" href="#ComoFunciona-inicio">Como Funciona Flexbox</a>
+      </li>
+    </ol>
+  </section>
 
-<!-- inidice -->
-<section class="doc-index">
- <h2 class="index-title">Indice</h2>
- <ol class="index-list">
-  <h3 class="list-title">Inicio</h3>
-  <li><a href="#QueEs-inicio">Que es Flexbox?</a></li>
- </ol>
-</section>
+  <section>
+    <!-- Que es Flexbox -->
+    <article>
+      <h2 id="QueEs-inicio">¿Que es Flexbox?</h2>
+      <div>
+      <p>
+        <i>Flexbox</i> es una forma de acomodar, alinear, distribuir, entre otros. Unos elementos dentro de un contenedor. <br>
+        Esto nos ayuda a que nuestrxa pagina web sea muchisimo mejor <strong>estructurada, organizada y un factor importante muy importante <i>Responsive</i></strong> <br>
 
- <hr>
+        Flexbox es muy buena comparada a otros tipos de <i>layouts</i>, como la propiedad <i>float</i>. Flexbox te permite que los elementos de un contenedor se mantegan <br>
+        organizados en diferentes cambios que tenga la pagina web, ya sea usando <abbr title="JavaScript"><i>JS</i></abbr>, <abbr title="Cascading Styles Sheets"><i>CSS</i></abbr>, o haciendo <i>zoom</i> en la pagina web. <br>
+      </p>
+      </div>
+    </article>
+    <article>
+      <h2 id="ComoFunciona-inicio">¿Como Funciona Flexbox?</h2>
+      <div>
+        <p>
+          Flexbox es un modulo de <abbr title="Cascading Styles Sheets"><i>CSS</i></abbr> que contiene algunas propiedades <br>
+          Que pueden ser usadas en los <i>containers</i> o como serán llamados al usar <i>Flexbox</i>, <i>Flex-Container</i> <br>
+          O en los elementos de estos <i>containers</i>, los <i>Flex-items</i> <br>
+          <br>
+          Un Ejemplo de los <i>Flex-Container</i> y sus <i>Flex-items</i> (Que no usa <i>Flexbox</i>)<br>
+        </p>
+        <div class="ejemplo-flexContainer">
+          <i class="ejemplo-flexContainer__text">Flex-Container</i>
+            <div class="ejemplo-flexItems"><i class="ejemplo-flexItems__text">Flex-items</i></div>
+            <div class="ejemplo-flexItems"><i class="ejemplo-flexItems__text">Flex-items</i></div>
+            <div class="ejemplo-flexItems"><i class="ejemplo-flexItems__text">Flex-items</i></div>
+        </div>
+        <p>
 
-<section>
- <!-- Que es Flexbox -->
- <article>
-  <h2 id="#QueEs-inicio">¿Que es Flexbox?</h2>
-   <div>
-    <p>
-     <i>Flexbox</i> es una forma de acomodar, alinear, distribuir, entre otros. Unos elementos dentro de un contenedor. <br>
-     Esto nos ayuda a que 
-    </p>
-   </div>
- </article>
+        </p>
+      </div>
+    </article>
+  </section>
+</main>
 
-</section>
+<!-- Footer -->
+<footer>
+  <!-- Not Yet -->
+</footer>
 </body>
 </html>

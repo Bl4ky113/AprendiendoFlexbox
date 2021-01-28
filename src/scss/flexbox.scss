@@ -1,5 +1,6 @@
 /* ----- Global Variables SASS ----- */
 
+/* Base Colors */
 $color_light1: #80d4ff ;
 $color_base1: #1510dd;
 $color_dark1: #000080;
@@ -8,11 +9,19 @@ $color_light2: #b3f0ff;
 $color_base2: #009dff;
 $color_dark2: #002266;
 
+/* Stock Colors */
 $color_white1: #fefefe;
 $color_white2: #f0f0f0;
 
 $color_black1: #000;
 $color_black2: #343434;
+
+/* Transitions porpertys */
+$transition_links: width, border-radius, background-color, color, text-decoration;
+
+/* Shadows Propertys */
+$shadow_box-bottomRight: 2px 1px 4px $color_black2;
+$shadow_text-bottomRight: 2px 2px 2px $color_black2;
 
 /* ----- __The Document__ ----- */
 
@@ -49,14 +58,14 @@ $color_black2: #343434;
 
  background-color: $color_base1;
 
- box-shadow: 2px 2px 3px $color_black1;
+ box-shadow: $shadow_box-bottomRight;
 
  /* Title of the Index */
  .main-index__title {
   padding-inline-start: 5px;
 
   color: $color_white2;
-  text-shadow: 3px 2px 1px $color_black1;
+  text-shadow: $shadow_text-bottomRight;
  }
 
  /*List of the index */
@@ -67,15 +76,16 @@ $color_black2: #343434;
 
   background-color: $color_base2;
 
-  box-shadow: 3px 2px 3px $color_black1;
+  box-shadow: $shadow_box-bottomRight;
 
   .index-list__title {
    padding-inline-start: 25px;
 
    color: $color_white2;
-   text-shadow: 3px 2px 1px $color_black1;
+   text-shadow: $shadow_text-bottomRight;
   }
 
+  /* Objects in the list "ol > li" */
   .list-object {
    width: 75%;
 
@@ -87,9 +97,11 @@ $color_black2: #343434;
 
    color: $color_white2;
    list-style-position: inside;
-   text-shadow: 1px 1px 2px $color_black1;
+   text-shadow: $shadow_text-bottomRight;
 
-   transition: 500ms all;
+   box-shadow: $shadow_box-bottomRight;
+
+   transition: 500ms $transition_links;
 
    &:hover{
     width: 90%;
@@ -107,6 +119,7 @@ $color_black2: #343434;
     }
    }
 
+   /* Links in the List Object "li < a" */
    .list-object__link {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -123,7 +136,13 @@ $color_black2: #343434;
 
 
 
-/* Arreglar */
+/*
+ Arreglar:
+  Nombres clases, XXXXX
+  cambiar a flex,
+  usar colores,
+  mejorar texto
+*/
 
 .ejemplo-flexContainer {
  width: 60%;

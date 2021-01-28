@@ -1,4 +1,8 @@
 /* ----- Global Variables SASS ----- */
+/* Base Colors */
+/* Stock Colors */
+/* Transitions porpertys */
+/* Shadows Propertys */
 /* ----- __The Document__ ----- */
 .doc {
   background-color: #f0f0f0;
@@ -27,26 +31,27 @@
   padding: 10px;
   float: left;
   background-color: #1510dd;
-  box-shadow: 2px 2px 3px #000;
+  box-shadow: 2px 1px 4px #343434;
   /* Title of the Index */
   /*List of the index */
 }
 .main-index .main-index__title {
   padding-inline-start: 5px;
   color: #f0f0f0;
-  text-shadow: 3px 2px 1px #000;
+  text-shadow: 2px 2px 2px #343434;
 }
 .main-index .index-list {
   margin: 5px;
   border-radius: 0.25em;
   padding: 5px;
   background-color: #009dff;
-  box-shadow: 3px 2px 3px #000;
+  box-shadow: 2px 1px 4px #343434;
+  /* Objects in the list "ol > li" */
 }
 .main-index .index-list .index-list__title {
   padding-inline-start: 25px;
   color: #f0f0f0;
-  text-shadow: 3px 2px 1px #000;
+  text-shadow: 2px 2px 2px #343434;
 }
 .main-index .index-list .list-object {
   width: 75%;
@@ -56,8 +61,10 @@
   background-color: #000080;
   color: #f0f0f0;
   list-style-position: inside;
-  text-shadow: 1px 1px 2px #000;
-  transition: 500ms all;
+  text-shadow: 2px 2px 2px #343434;
+  box-shadow: 2px 1px 4px #343434;
+  transition: 500ms width, border-radius, background-color, color, text-decoration;
+  /* Links in the List Object "li < a" */
 }
 .main-index .index-list .list-object:hover {
   width: 90%;
@@ -78,7 +85,13 @@
   display: inline-block;
 }
 
-/* Arreglar */
+/*
+ Arreglar:
+  Nombres clases, XXXXX
+  cambiar a flex,
+  usar colores,
+  mejorar texto
+*/
 .ejemplo-flexContainer {
   width: 60%;
   height: 200px;

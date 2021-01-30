@@ -142,21 +142,18 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
 }
 
 
-/* ----- Section - Inicio Flexbox ----- */
+/* ----- Sections - Flexbox ----- */
 
-.main-inicio {
+.main-section {
  margin: 5px 10px;
 
- /* Flex Properties */
- flex-grow: 5;
-
  /* Articles in the section */ 
- .inicio-article{
+ .section-article{
   margin-top: 10px;
   margin-bottom: 10px;
 
   /* title of the article */
-  .inicio-article__title {
+  .section-article__title {
    width: 500px;
 
    margin-inline-start: 5px;
@@ -185,8 +182,8 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
    padding-right: 5px;
    padding-left: 5px;
 
-   text-align: justify;
-
+   /* -- Paragraphs in the Article -- */
+   
    .content-paragraph {
     padding-left: 5px;
     
@@ -194,8 +191,7 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
     font-size: 16px;
     font-weight: 450;
     line-height: 1.25;
-    text-align-last: left;
-
+    
     /* Semantic Tags in the paragraph */
 
     abbr{
@@ -220,6 +216,113 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
      text-decoration: underline $color_base1 solid 1px;
     }
    }
+
+   /* -- List of the Article -- */
+
+   .content-list {
+    width: 70%;
+
+    margin: 0 20px;
+    border: 4px solid $color_dark1;
+    border-radius: 0.5em;
+    padding: 10px;
+
+    background-color: $color_white1;
+
+    box-shadow: $shadow_box-bottomRight;
+    list-style-position: inside;
+    
+    .list-object{
+     border: 2px solid $color_base1;
+     border-radius: 0.25em;
+     border-top-right-radius: 0.5em;
+     border-top-left-radius: 0.5em;
+     padding-inline-start: 10px;
+
+     background-color: $color_base1;
+
+     box-shadow: $shadow_box-bottomRight;
+
+     &::marker {
+      color: $color_light2;
+      margin: 5px 0;
+     }
+
+     .list-object__title {
+      margin: 5px 0;
+
+      color: $color_white1;
+      font-size: 20px;
+      font-weight: 800;
+      text-shadow: $shadow_text-bottomRight;
+
+      display: inline-block; 
+
+      span {
+       color: $color_light2;
+      }
+     }
+
+     .object-paragraph {
+      padding: 10px;
+      padding-left: 5px;
+      
+      color: $color_black1;
+      font-size: 16px;
+      font-weight: 450;
+      line-height: 1.25;
+
+      background-color: $color_white1;
+
+      /* Semantic Tags in the paragraph */
+
+      abbr{
+       padding: 0 2px;
+
+       font-weight: 1000;
+       text-decoration: underline $color_dark1 solid;
+
+       &:hover {
+        border-radius: 0.25em;
+
+        background-color: $color_light1;
+       }
+      }
+
+      i{
+       font-size: 18px;
+      }
+
+      strong {
+       font-weight: 1000;
+       text-decoration: underline $color_base1 solid 1px;
+      }
+     }
+    }
+   }
+
+   /* -- External Sources of the Article -- */
+   /*
+    - Images,
+    - Videos,
+    - Audios,
+    - Others...
+   */
+
+   .content-source {
+    margin: 10px;
+    
+    picture {
+     /* All Images */
+     .content-source__img {
+      width: 250px;
+      height: 500px;
+     }
+    }
+   }
+
+
+   /* ----- Examples ----- */
 
    /* Example of Flex Container and Flex Items */
    

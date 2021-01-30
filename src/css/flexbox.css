@@ -92,20 +92,18 @@
   display: inline-block;
 }
 
-/* ----- Section - Inicio Flexbox ----- */
-.main-inicio {
+/* ----- Sections - Flexbox ----- */
+.main-section {
   margin: 5px 10px;
-  /* Flex Properties */
-  flex-grow: 5;
   /* Articles in the section */
 }
-.main-inicio .inicio-article {
+.main-section .section-article {
   margin-top: 10px;
   margin-bottom: 10px;
   /* title of the article */
   /* --- Content of the article --- */
 }
-.main-inicio .inicio-article .inicio-article__title {
+.main-section .section-article .section-article__title {
   width: 500px;
   margin-inline-start: 5px;
   border-top-left-radius: 0.5em;
@@ -120,46 +118,124 @@
   text-shadow: 2px 2px 2px #343434;
   display: inline-block;
 }
-.main-inicio .inicio-article .article-content {
+.main-section .section-article .article-content {
   border: 3px outset #000080;
   border-radius: 0.25em;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 5px;
   padding-left: 5px;
-  text-align: justify;
+  /* -- Paragraphs in the Article -- */
+  /* -- List of the Article -- */
+  /* -- External Sources of the Article -- */
+  /*
+   - Images,
+   - Videos,
+   - Audios,
+   - Others...
+  */
+  /* ----- Examples ----- */
   /* Example of Flex Container and Flex Items */
 }
-.main-inicio .inicio-article .article-content .content-paragraph {
+.main-section .section-article .article-content .content-paragraph {
   padding-left: 5px;
   color: #000;
   font-size: 16px;
   font-weight: 450;
   line-height: 1.25;
-  text-align-last: left;
   /* Semantic Tags in the paragraph */
 }
-.main-inicio .inicio-article .article-content .content-paragraph abbr {
+.main-section .section-article .article-content .content-paragraph abbr {
   padding: 0 2px;
   font-weight: 1000;
   text-decoration: underline #000080 solid;
 }
-.main-inicio .inicio-article .article-content .content-paragraph abbr:hover {
+.main-section .section-article .article-content .content-paragraph abbr:hover {
   border-radius: 0.25em;
   background-color: #80d4ff;
 }
-.main-inicio .inicio-article .article-content .content-paragraph i {
+.main-section .section-article .article-content .content-paragraph i {
   font-size: 18px;
 }
-.main-inicio .inicio-article .article-content .content-paragraph strong {
+.main-section .section-article .article-content .content-paragraph strong {
   font-weight: 1000;
   text-decoration: underline #1510dd solid 1px;
 }
-.main-inicio .inicio-article .article-content .content-example {
+.main-section .section-article .article-content .content-list {
+  width: 70%;
+  margin: 0 20px;
+  border: 4px solid #000080;
+  border-radius: 0.5em;
+  padding: 10px;
+  background-color: #fefefe;
+  box-shadow: 2px 1px 4px #343434;
+  list-style-position: inside;
+}
+.main-section .section-article .article-content .content-list .list-object {
+  border: 2px solid #1510dd;
+  border-radius: 0.25em;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  padding-inline-start: 10px;
+  background-color: #1510dd;
+  box-shadow: 2px 1px 4px #343434;
+}
+.main-section .section-article .article-content .content-list .list-object::marker {
+  color: #b3f0ff;
+  margin: 5px 0;
+}
+.main-section .section-article .article-content .content-list .list-object .list-object__title {
+  margin: 5px 0;
+  color: #fefefe;
+  font-size: 20px;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #343434;
+  display: inline-block;
+}
+.main-section .section-article .article-content .content-list .list-object .list-object__title span {
+  color: #b3f0ff;
+}
+.main-section .section-article .article-content .content-list .list-object .object-paragraph {
+  padding: 10px;
+  padding-left: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 1.25;
+  background-color: #fefefe;
+  /* Semantic Tags in the paragraph */
+}
+.main-section .section-article .article-content .content-list .list-object .object-paragraph abbr {
+  padding: 0 2px;
+  font-weight: 1000;
+  text-decoration: underline #000080 solid;
+}
+.main-section .section-article .article-content .content-list .list-object .object-paragraph abbr:hover {
+  border-radius: 0.25em;
+  background-color: #80d4ff;
+}
+.main-section .section-article .article-content .content-list .list-object .object-paragraph i {
+  font-size: 18px;
+}
+.main-section .section-article .article-content .content-list .list-object .object-paragraph strong {
+  font-weight: 1000;
+  text-decoration: underline #1510dd solid 1px;
+}
+.main-section .section-article .article-content .content-source {
+  margin: 10px;
+}
+.main-section .section-article .article-content .content-source picture {
+  /* All Images */
+}
+.main-section .section-article .article-content .content-source picture .content-source__img {
+  width: 250px;
+  height: 500px;
+}
+.main-section .section-article .article-content .content-example {
   width: 80%;
   margin: 0 auto;
 }
-.main-inicio .inicio-article .article-content .content-example .example-flexContainer {
+.main-section .section-article .article-content .content-example .example-flexContainer {
   width: 100%;
   height: 200px;
   margin: 5px;
@@ -171,41 +247,23 @@
   display: flex;
   justify-content: space-evenly;
 }
-.main-inicio .inicio-article .article-content .content-example .example-flexContainer .example-flexContainer__text {
+.main-section .section-article .article-content .content-example .example-flexContainer .example-flexContainer__text {
   color: #fefefe;
   font-size: 32px;
   text-shadow: 2px 2px 2px #343434;
 }
-.main-inicio .inicio-article .article-content .content-example .example-flexContainer .flexContainer-flexItems {
+.main-section .section-article .article-content .content-example .example-flexContainer .flexContainer-flexItems {
   width: 150px;
   padding: 5px;
   background-color: #1510dd;
   text-align: center;
 }
-.main-inicio .inicio-article .article-content .content-example .example-flexContainer .flexContainer-flexItems .flexContainer-flexItems__text {
+.main-section .section-article .article-content .content-example .example-flexContainer .flexContainer-flexItems .flexContainer-flexItems__text {
   margin-top: 50px;
   color: #fefefe;
   font-weight: bold;
   text-shadow: 2px 2px 2px #343434;
   display: block;
-}
-
-/*
- Arreglar:
-  Nombres clases, XXXXX
-  cambiar a flex,
-  usar colores,
-  mejorar texto
-*/
-.example {
-  width: 60%;
-  height: 200px;
-  margin: 5px auto;
-  border: 5px solid #000;
-  padding: 0;
-  background-color: #000057;
-  display: flex;
-  text-align: center;
 }
 
 /* ----- RESTART CSS ----- */

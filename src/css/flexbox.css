@@ -293,19 +293,24 @@
   color: #fefefe;
   font-size: 32px;
   text-shadow: 2px 2px 2px #343434;
+  /* Flex Properties */
+  align-self: center;
 }
 .main-section .section-article .article-content .content-example .example-flexContainer .flexContainer-flexItems {
   width: 150px;
   padding: 5px;
   background-color: #1510dd;
-  text-align: center;
+  /* Flex Properties */
+  display: flex;
+  justify-content: center;
 }
 .main-section .section-article .article-content .content-example .example-flexContainer .flexContainer-flexItems .flexContainer-flexItems__text {
-  margin-top: 50px;
   color: #fefefe;
   font-weight: bold;
   text-shadow: 2px 2px 2px #343434;
   display: block;
+  /* Flex Properties */
+  align-self: center;
 }
 
 /* ----- RESTART CSS ----- */

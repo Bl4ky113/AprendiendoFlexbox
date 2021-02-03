@@ -20,8 +20,10 @@ $color_black2: #343434;
 $transition_links: width, border-radius, background-color, color, text-decoration;
 
 /* Shadows Propertys */
-$shadow_box-bottomRight: 2px 1px 4px $color_black2;
+$shadow_box-bottomRight: 2px 1px 5px $color_black2;
+
 $shadow_text-bottomRight: 2px 2px 2px $color_black2;
+$shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 
 /* ----- __The Document__ ----- */
 
@@ -311,14 +313,69 @@ $shadow_text-bottomRight: 2px 2px 2px $color_black2;
 
    .content-source {
     margin: 10px;
+    border: 4px solid $color_dark1;
+    border-radius: 0.5em;
+    padding: 10px;
+
+    background-color: $color_base1;
+
+    /* Flex Properties */
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
     
-    picture {
-     /* All Images */
-     .content-source__img {
-      width: 250px;
-      height: 500px;
+    /* ---- Images ---- */
+
+    /* All Images */
+    .content-source__img {
+     margin-top: 10px;
+     margin-bottom: 0;
+     border: 2px solid $color_dark1;
+     border-radius: 1em;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-right: 10px;
+     padding-left: 10px;
+
+     background-color: $color_dark1;
+
+     /* Flex Properties */
+     flex-grow: 5;
+
+     display: block;
+    }
+
+    /* The Underlying Concept Image */
+    .content-source--UnderlyingConcept__img {
+     width: 512px;
+     height: 212px;
+    }
+
+    /* ---- Text/Cite/Quotes on Sources ---- */
+    .source-text {
+     border: 2px solid $color_dark1;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-right: 10px;
+     padding-left: 10px;
+     
+     background-color: $color_white1;
+
+     color: $color_black1;
+     font-size: 12px;
+     text-shadow: $shadow_text--light-bottomRight;
+     font-weight: 200;
+
+     .source-text__quote {
+      color: $color_black2;
+      font-weight: 50;
+     }
+
+     .source-text__link {
+      color: $color_base1;
      }
     }
+
    }
 
 

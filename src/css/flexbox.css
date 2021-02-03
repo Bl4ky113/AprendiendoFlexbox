@@ -34,7 +34,7 @@
   border-radius: 0.5em;
   padding: 10px;
   background-color: #1510dd;
-  box-shadow: 2px 1px 4px #343434;
+  box-shadow: 2px 1px 5px #343434;
   /* Title of the Index */
   /*List of the index */
 }
@@ -48,7 +48,7 @@
   border-radius: 0.25em;
   padding: 5px;
   background-color: #009dff;
-  box-shadow: 2px 1px 4px #343434;
+  box-shadow: 2px 1px 5px #343434;
   /* Flex Properties */
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@
   color: #f0f0f0;
   list-style-position: inside;
   text-shadow: 2px 2px 2px #343434;
-  box-shadow: 2px 1px 4px #343434;
+  box-shadow: 2px 1px 5px #343434;
   transition: 500ms width, border-radius, background-color, color, text-decoration;
   /* Links in the List Object "li < a" */
 }
@@ -168,7 +168,7 @@
   border-radius: 0.5em;
   padding: 10px;
   background-color: #fefefe;
-  box-shadow: 2px 1px 4px #343434;
+  box-shadow: 2px 1px 5px #343434;
   list-style-position: inside;
 }
 .main-section .section-article .article-content .content-list .list-object {
@@ -178,7 +178,7 @@
   border-top-left-radius: 0.5em;
   padding-inline-start: 10px;
   background-color: #1510dd;
-  box-shadow: 2px 1px 4px #343434;
+  box-shadow: 2px 1px 5px #343434;
 }
 .main-section .section-article .article-content .content-list .list-object::marker {
   color: #b3f0ff;
@@ -223,13 +223,55 @@
 }
 .main-section .section-article .article-content .content-source {
   margin: 10px;
-}
-.main-section .section-article .article-content .content-source picture {
+  border: 4px solid #000080;
+  border-radius: 0.5em;
+  padding: 10px;
+  background-color: #1510dd;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  /* ---- Images ---- */
   /* All Images */
+  /* The Underlying Concept Image */
+  /* ---- Text/Cite/Quotes on Sources ---- */
 }
-.main-section .section-article .article-content .content-source picture .content-source__img {
-  width: 250px;
-  height: 500px;
+.main-section .section-article .article-content .content-source .content-source__img {
+  margin-top: 10px;
+  margin-bottom: 0;
+  border: 2px solid #000080;
+  border-radius: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #000080;
+  /* Flex Properties */
+  flex-grow: 5;
+  display: block;
+}
+.main-section .section-article .article-content .content-source .content-source--UnderlyingConcept__img {
+  width: 512px;
+  height: 212px;
+}
+.main-section .section-article .article-content .content-source .source-text {
+  border: 2px solid #000080;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #fefefe;
+  color: #000;
+  font-size: 12px;
+  text-shadow: 1px 1px 3px #343434;
+  font-weight: 200;
+}
+.main-section .section-article .article-content .content-source .source-text .source-text__quote {
+  color: #343434;
+  font-weight: 50;
+}
+.main-section .section-article .article-content .content-source .source-text .source-text__link {
+  color: #1510dd;
 }
 .main-section .section-article .article-content .content-example {
   width: 80%;

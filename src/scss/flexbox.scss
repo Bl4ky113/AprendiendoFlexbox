@@ -16,6 +16,12 @@ $color_white2: #f0f0f0;
 $color_black1: #000;
 $color_black2: #343434;
 
+/* Code Colors */
+$color_css-selector: #ffd24d;
+$color_css-bracket: #eee;
+$color_css-coment: #959595;
+$color_css-properties: #f2f2f2;
+
 /* Transitions porpertys */
 $transition_links: width, border-radius, background-color, color, text-decoration;
 
@@ -381,7 +387,39 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
    /* ----- Code Examples ----- */
 
    .content-code {
-    
+    width: 90%;
+
+    margin: 10px auto;
+    border: 2px solid $color_black1;
+    border-left: 8px solid $color_dark2;
+    padding: 10px;
+
+    background-color: $color_black2;
+
+    /* ---- Style in CSS's Code ---- */
+
+    /* All the code */
+    .code-css {
+
+    }
+
+    /* CSS Selectors */
+    .css-selector {
+     color: $color_css-selector;
+    }
+    .css-commentary {
+     color: $color_css-coment;
+    }
+    .css-properties {
+     color: $color_css-properties;
+    }
+    .css-bracket {
+     color: $color_css-bracket;
+    }
+
+    .code--idented-1 {
+     padding-inline-start: 20px;
+    }
 
    }
 

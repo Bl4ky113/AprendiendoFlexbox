@@ -1,6 +1,7 @@
 /* ----- Global Variables SASS ----- */
 /* Base Colors */
 /* Stock Colors */
+/* Code Colors */
 /* Transitions porpertys */
 /* Shadows Propertys */
 /* ----- __The Document__ ----- */
@@ -275,6 +276,32 @@
 }
 .main-section .section-article .article-content .content-source .source-text .source-text__link {
   color: #1510dd;
+}
+.main-section .section-article .article-content .content-code {
+  width: 90%;
+  margin: 10px auto;
+  border: 2px solid #000;
+  border-left: 8px solid #002266;
+  padding: 10px;
+  background-color: #343434;
+  /* ---- Style in CSS's Code ---- */
+  /* All the code */
+  /* CSS Selectors */
+}
+.main-section .section-article .article-content .content-code .css-selector {
+  color: #ffd24d;
+}
+.main-section .section-article .article-content .content-code .css-commentary {
+  color: #959595;
+}
+.main-section .section-article .article-content .content-code .css-properties {
+  color: #f2f2f2;
+}
+.main-section .section-article .article-content .content-code .css-bracket {
+  color: #eee;
+}
+.main-section .section-article .article-content .content-code .code--idented-1 {
+  padding-inline-start: 20px;
 }
 .main-section .section-article .article-content .content-example {
   width: 80%;

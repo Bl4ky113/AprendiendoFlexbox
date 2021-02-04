@@ -392,15 +392,41 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
     margin: 10px auto;
     border: 2px solid $color_black1;
     border-left: 8px solid $color_dark2;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 
     background-color: $color_black2;
+
+    .content-code__title {
+     width: 250px;
+     height: 30px;
+
+     margin-bottom: 10px;
+     border: 2px solid $color_dark1;
+     border-radius: 0.25em;
+     border-bottom-right-radius: 1em;
+     padding-inline-start: 20px;
+
+     background-color: $color_dark2;
+
+     color: $color_white2;
+     font-size: 28px;
+
+     /* Flex Properties */
+     display: flex;
+
+     align-items: center;
+     
+     abbr {
+      text-decoration: none;
+     }
+
+    }
 
     /* ---- Style in CSS's Code ---- */
 
     /* All the code */
     .code-css {
-
     }
 
     /* CSS Selectors */

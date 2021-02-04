@@ -66,7 +66,7 @@
         <br>
         
         <!-- Ejemplo de El Flex Container y Su Items -->
-        <div class="content-example">
+        <div class="content-example flexContainer-example">
           <div class="example-flexContainer">
             <span class="example-flexContainer__text">Flex-Container</span>
             <br><br>
@@ -180,6 +180,48 @@
           Una cualidad necesitada, para que <strong>la página web pueda ser usada por muchos usuarios con dispositivos y pantallas muy diferentes</strong>. <br>
           Aún que <i>Flexbox</i> no convierte totalmente tu página web a <i>Responsive</i>, <i>Flexbox</i> ayudara mucho en este proceso. <br>
         </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Pero esto no es lo unico que <i>Flexbox</i> puede lograr, tambien con su modulo podemos crear diferentes <i>styles</i> que antes eran muy dificiles de hacer <br>
+        </p>
+
+        <ul class="content-list">
+          <li class="list-object">
+            <h3 class="list-object__title">Centrar elementos<span> : </span></h3>
+            <p class="object-paragraph">
+              Antes con <abbr title="Cascading Styles Sheets">CSS</abbr> no podiamos hacer de una forma muy sencilla que nuestros elementos queden centrados tanto veticalmente como algunas veces horizontalmente <br>
+              Pero con <i>Flexbox</i>, <strong>tenemos que usar 1 o 2 propiedades para que nuestros <i>Flex-items</i> queden perfectamente organizados</strong> <br>
+              Ejemplo de centrar usando <i>Flexbox</i>: <br>
+            </p>
+
+            <!-- Ejemplo Flex-Items Alineados -->
+            <div class="content-example centerAlign-example">
+              <div class="example-flexContainer">
+                <div class="flexContainer-flexItem"></div>
+              </div>
+            </div>
+            <!-- Código Flex-Items Alineados -->
+            <code class="content-code code-css">
+              <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+                <span class="css-coment">/* Styles del contenedor */</span> <br>
+                <br>
+                <span class="css-coment">/* Flex Properties */</span> <br>
+                <span class="css-properties">display: flex;</span> <br>
+                <br>
+                <span class="css-properties">justify-content: center;</span> <span class="css-coment">/* Alinear en el centro del "main axis" *</span> <br>
+                <span class="css-properties">align-items: center;</span> <span class="css-coment">/* Alinear en el centro del "cross axis" */</span> <br>
+              <span class="css-bracket">}</span> <br>
+              <br>
+              <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+                <span class="css-coment">/* Styles del Objeto */</span> <br>
+              <span class="css-bracket">}</span> <br>
+            </code>
+          </li>
+
+        </ul>
+
       </div>
     </article>
 

@@ -378,15 +378,28 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 
    }
 
+   /* ----- Code Examples ----- */
+
+   .content-code {
+    
+
+   }
+
 
    /* ----- Examples ----- */
 
-   /* Example of Flex Container and Flex Items */
-   
    .content-example {
     width: 80%;
 
-    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+
+   /* Example of Flex Container and Flex Items */
+   
+   .flexContainer-example {
 
     .example-flexContainer {
      width: 100%;
@@ -435,6 +448,39 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
      }
     }
    }
+
+   /* Example of Center Align Things using FlexBox */
+
+   .centerAlign-example {
+
+    .example-flexContainer {
+     height: 200px;
+
+     border: 4px dashed $color_dark1;
+     border-radius: 0.5em;
+     padding: 10px;
+
+     background-color: $color_white1;
+
+     /* Flex Properties */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     .flexContainer-flexItem {
+      width: 50px;
+      height: 50px;
+
+      border-radius: 0.25em;
+      
+      background-color: $color_light1;
+     }
+    }
+   }
+
+
+   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
+
   } 
  }
 }

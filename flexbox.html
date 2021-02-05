@@ -226,9 +226,9 @@
           </li> 
 
           <br>
-
+          <!-- Alinear Inline Elements con Flexbox -->
           <li class="list-object">
-            <h3 class="list-object__title">Alinear <i>Inline-Elements</i></h3>
+            <h3 class="list-object__title">Alinear <i>Inline-Elements</i><span> : </span></h3>
             <p class="object-paragraph">
               Con <i>Flexbox</i> podemos organizar de una forma muy sencilla cualquier <i>Inline-Element</i> <br>
               Sin <i>Flexbox</i> y solo <abbr title="Cascading Styles Sheets">CSS</abbr> tendriamos que usar más propiedades y más complejas <br>
@@ -267,6 +267,55 @@
                   <br>
                   <span class="css-properties code--idented-1">display: inline;</span> <br>
                 <span class="css-bracket">}</span>
+              </code>
+            </div>
+          </li>
+
+          <br>
+
+          <!-- Alinear Espaciadamente Elementos con Flexbox -->
+          <li class="list-object"> 
+            <h3 class="list-object__title">Espaciar Elementos Correctamente <span> : </span></h3>
+            <p class="object-paragraph">
+              Otro gran problema a el momento de hacer una pagina web, es el dar correctos espaciados a los elementos <br>
+              de un contenedor con <i>Flexbox</i>, podemos darle una solucion muy sencilla <br>
+              a este problema, pero ademas este espaciado se va mantener dependiendo del tamaño <br>
+              del <i>Flex-Container</i> a el momento de agrandar o minimizar la página web. <br>
+              Esto nos va a aportar a la parte <i>Responsive</i> de nuestra página web <br>
+              <br>
+              Ejemplos de Como espaciar Elementos usando <i>Flexbox</i> <br>
+            </p>
+
+            <!-- Ejemplo Alinear Espaciadamente Elementos -->
+            <div class="content-example spacedAlign-example">
+              <div class="example-flexContainer">
+                <div class="flexContainer-flexItems light"></div>
+                <div class="flexContainer-flexItems dark"></div>
+                <div class="flexContainer-flexItems base"></div>
+                <div class="flexContainer-flexItems dark"></div>
+                <div class="flexContainer-flexItems base"></div>
+                <div class="flexContainer-flexItems light"></div>
+              </div>
+            </div>
+            <!-- Code del Ejemplo Spaced Align usando Flexbox -->
+            <div class="content-code">
+              <code class="code-css">
+                <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+                  <span class="css-commentary code--idented-1">/* Styles del Contenedor */</span> <br>
+                  <br>
+                  <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+                  <span class="css-properties code--idented-1">display: flex;</span> <span class="css-commentary">/* Usamos Flexbox en el Contenedor */</span> <br>
+                  <br>
+                  <span class="css-commentary code--idented-1">/* Hacemos que los elementos tengan un espacio alrededor */</span> <br>
+                  <span class="css-properties code--idented-1">justify-content: space-around;</span> <br>
+                  <br>
+                  <span class="css-commentary code--idented-1">/* Lo alineamos con el cross axis */ (Opcional)</span> <br>
+                  <span class="css-properties code--idented-1">align-items: center;</span> <br>
+                <span class="css-bracket">}</span> <br>
+                <br>
+                <span class="css-selector">.flexContainer .flexItems </span> <span class="css-bracket">{</span> <br>
+                  <span class="css-commentary code--idented-1">/* Styles del Elemento */</span> <br>
+                <span class="css-bracket">}</span> <br>
               </code>
             </div>
           </li>

@@ -369,6 +369,10 @@
   /* Flex Properties */
   align-self: center;
 }
+.main-section .section-article .article-content .centerAlign-example {
+  padding: 10px;
+  background-color: #fefefe;
+}
 .main-section .section-article .article-content .centerAlign-example .example-flexContainer {
   height: 200px;
   border: 4px dashed #000080;
@@ -386,11 +390,14 @@
   border-radius: 0.25em;
   background-color: #80d4ff;
 }
+.main-section .section-article .article-content .inlineAlign-example {
+  padding: 10px;
+  background-color: #fefefe;
+}
 .main-section .section-article .article-content .inlineAlign-example .example-flexContainer {
   height: 200px;
   border: 4px dashed #000080;
   border-radius: 0.5em;
-  padding: 10px;
   background-color: #fefefe;
   /* Flex Properties */
   display: flex;
@@ -409,6 +416,34 @@
 }
 .main-section .section-article .article-content .inlineAlign-example .dark {
   background-color: #002266;
+}
+.main-section .section-article .article-content .spacedAlign-example {
+  padding: 10px;
+  background-color: #fefefe;
+}
+.main-section .section-article .article-content .spacedAlign-example .example-flexContainer {
+  height: 200px;
+  border: 4px dashed #000080;
+  border-radius: 0.5em;
+  background-color: #fefefe;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .flexContainer-flexItems {
+  height: 50px;
+  width: 50px;
+  border-radius: 0.75em;
+}
+.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .light {
+  background-color: #b3f0ff;
+}
+.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .dark {
+  background-color: #002266;
+}
+.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .base {
+  background-color: #009dff;
 }
 
 /* ----- RESTART CSS ----- */

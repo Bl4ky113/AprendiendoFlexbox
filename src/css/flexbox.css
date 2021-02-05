@@ -139,6 +139,7 @@
   /* ----- Examples ----- */
   /* Example of Flex Container and Flex Items */
   /* Example of Center Align Things using FlexBox */
+  /* Example of Aligning Inline-Elements with Flexbox */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -384,6 +385,30 @@
   height: 50px;
   border-radius: 0.25em;
   background-color: #80d4ff;
+}
+.main-section .section-article .article-content .inlineAlign-example .example-flexContainer {
+  height: 200px;
+  border: 4px dashed #000080;
+  border-radius: 0.5em;
+  padding: 10px;
+  background-color: #fefefe;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+}
+.main-section .section-article .article-content .inlineAlign-example .flexContainer-flexItem {
+  width: 20%;
+  height: 50px;
+  display: inline;
+}
+.main-section .section-article .article-content .inlineAlign-example .light {
+  background-color: #b3f0ff;
+}
+.main-section .section-article .article-content .inlineAlign-example .base {
+  background-color: #009dff;
+}
+.main-section .section-article .article-content .inlineAlign-example .dark {
+  background-color: #002266;
 }
 
 /* ----- RESTART CSS ----- */

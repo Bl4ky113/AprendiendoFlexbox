@@ -188,6 +188,8 @@
         </p>
 
         <ul class="content-list">
+
+          <!-- Alinear Elementos Completamente -->
           <li class="list-object">
             <h3 class="list-object__title">Centrar elementos<span> : </span></h3>
             <p class="object-paragraph">
@@ -219,6 +221,52 @@
                 <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
                   <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
                 <span class="css-bracket">}</span> <br>
+              </code>
+            </div>
+          </li> 
+
+          <br>
+
+          <li class="list-object">
+            <h3 class="list-object__title">Alinear <i>Inline-Elements</i></h3>
+            <p class="object-paragraph">
+              Con <i>Flexbox</i> podemos organizar de una forma muy sencilla cualquier <i>Inline-Element</i> <br>
+              Sin <i>Flexbox</i> y solo <abbr title="Cascading Styles Sheets">CSS</abbr> tendriamos que usar más propiedades y más complejas <br>
+              Por ende podemos usar <i>Flexbox</i> para diferentes objetos que usen <i>Inline Elements</i>, como los <i>Navs</i>, <i>Buttons</i>, entre otros. <br>
+              Pero lo mejor de todo esto, es que a no ser que necesitemos una organización especifica <br>
+              solo debemos usar el: <i>display: flex;</i> <br>
+              Ejemplo al organizar perfectamente 5 <i>Inline-Element</i>s en un <i>Flex-Container</i>: <br>
+            </p>
+
+            <!-- Ejemplo Organizar Inline Elements con Flexbox -->
+            <div class="content-example inlineAlign-example">
+              <div class="example-flexContainer">
+                <div class="flexContainer-flexItem light"></div>
+                <div class="flexContainer-flexItem base"></div>
+                <div class="flexContainer-flexItem dark"></div>
+                <div class="flexContainer-flexItem light"></div>
+                <div class="flexContainer-flexItem base"></div>
+              </div>
+            </div>
+            <!-- Codigo del Ejemplo Align Inline Elements -->
+            <div class="content-code">
+              <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+              <code class="code-css">
+                <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+                  <span class="css-commentary code--idented-1">/* Styles del Contenedor */</span> <br>
+                  <br>
+                  <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+                  <span class="css-properties code--idented-1">display: flex;</span> <span class="css-commentary">/* Usamos en el Contenedor Flexbox</span> <br>
+                  <span class="css-properties code--idented-1">align-items: center</span> <span class="css-commentary">/* Centramos los Elements en el Cross Axis */ (Opcional)</span> <br>
+                  <br>
+                <span class="css-bracket">}</span> <br>
+                <br>
+                <span class="css-selector">.flexContainer .flexItem</span> <span class="css-bracket">{</span> <br>
+                  <span class="css-commentary code--idented-1">/* Styles de los Elementos */</span> <br>
+                  <span class="css-properties code--idented-1">width: 20%;</span> <span class="css-commentary">/* Ancho exacto de los elementos */</span> <br>
+                  <br>
+                  <span class="css-properties code--idented-1">display: inline;</span> <br>
+                <span class="css-bracket">}</span>
               </code>
             </div>
           </li>

@@ -545,6 +545,37 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
     }
    }
 
+   /* Example of Aligning Inline-Elements with Flexbox */
+   .inlineAlign-example {
+
+    .example-flexContainer {
+     height: 200px;
+
+     border: 4px dashed $color_dark1;
+     border-radius: 0.5em;
+     padding: 10px;
+
+     background-color: $color_white1;
+
+     /* Flex Properties */
+     display: flex;
+
+     align-items: center;
+    }
+
+    .flexContainer-flexItem {
+     width: 20%;
+     height: 50px;
+
+     display: inline;
+    }
+
+    .light {background-color: $color_light2;}
+    .base {background-color: $color_base2;}
+    .dark {background-color: $color_dark2;}
+
+   }
+
 
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 

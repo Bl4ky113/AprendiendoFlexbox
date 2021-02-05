@@ -433,20 +433,23 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
     .css-selector {
      color: $color_css-selector;
     }
+    /* CSS Comments */
     .css-commentary {
      color: $color_css-coment;
     }
+    /* CSS Properties */
     .css-properties {
      color: $color_css-properties;
     }
+    /* CSS Brackets */
     .css-bracket {
      color: $color_css-bracket;
     }
 
+    /* Code Indetation */
     .code--idented-1 {
      padding-inline-start: 20px;
     }
-
    }
 
 

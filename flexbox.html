@@ -31,6 +31,9 @@
       <li class="list-object">
         <a class="list-object__link" href="#PorqueUsar-inicio">Por qué Usar <i>Flexbox</i></a>
       </li>
+      <li class="list-object">
+        <a class="list-object__link" href="#CuandoUsar-inicio">Cuando usar <i>Flexbox</i></a>
+      </li>
     </ol>
   </nav>
 
@@ -283,7 +286,7 @@
               del <i>Flex-Container</i> a el momento de agrandar o minimizar la página web. <br>
               Esto nos va a aportar a la parte <i>Responsive</i> de nuestra página web <br>
               <br>
-              Ejemplos de Como espaciar Elementos usando <i>Flexbox</i> <br>
+              Ejemplo de Como espaciar Elementos usando <i>Flexbox</i> <br>
             </p>
 
             <!-- Ejemplo Alinear Espaciadamente Elementos -->
@@ -300,6 +303,7 @@
             <!-- Code del Ejemplo Spaced Align usando Flexbox -->
             <div class="content-code">
               <code class="code-css">
+              <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
                 <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
                   <span class="css-commentary code--idented-1">/* Styles del Contenedor */</span> <br>
                   <br>
@@ -318,10 +322,20 @@
                 <span class="css-bracket">}</span> <br>
               </code>
             </div>
+            <p class="object-paragraph">
+              Se pueden usar diferentes espaciados para los <i>Flex-Items</i> <br>
+              Estos pueden ser, espaciados en todo el <i>Flex-Container</i>. <i>space-between</i> <br>
+              Espaciados con un poco de espacio entre cada uno. <i>space-around</i> (Ejemplo anterior)<br>
+              Y Espaciados equitativamente por todo el <i>Flex-Container</i>. <i>space-evenly</i> br
+            </p>
           </li>
-
         </ul>
-
+        <br>
+        <p class="content-paragraph">
+          Aún que he puesto muchos ejemplos, <i>Flexbox</i> tiene muchisimas más funcionalidades, usos, y posibilidades. <br>
+          <br>
+          <strong>Te recomiendo que busques y hagas muchos experimentos con <i>Flexbox</i></strong>
+        </p>
       </div>
     </article>
 
@@ -330,8 +344,62 @@
       <h2 id="CuandoUsar-inicio" class="section-article__title">¿Cuando Usar <i>Flexbox</i>?</h2>
       <div class="article-content">
         <p class="content-paragraph">
-
+          Aún que <i>Flexbox</i>, por sí solo, se puede usar totalmente para realizar una página web <br>
+          Lo más recomendado, es <strong>usar otros modulos de <abbr title="Cascading Styles Sheets">CSS</abbr> como <i>Grid</i> para maquetar y organizar mejor nuestra página web</strong> <br>
+          Pero si se desea y se recomienda, se puede usar tanto <i>Flexbox</i> como <i>Grid</i> para una página web, dando unos resultados increibles y maravillosos <br>
         </p>
+
+        <br>
+
+        <p class="content-paragraph content-paragraph--semiTitle">
+          Entonces <strong>¿Como, Donde y Cuando debo usar <i>Flexbox</i>?</strong>
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Primero creo que deberiamos ver <strong>cuando NO debemos usar <i>Flexbox</i></strong> <br>
+          Ya que es una grandiosa herramienta, pero sobre usada o usada donde no deberia, puede resultar en <strong>"Curas peores que la Enfermedad"</strong> <br>
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Un primer claro ejemplo es, que aún que <i>Flexbox</i> sea muy bueno y util al momento de maquetar nuestra página web, <br>
+          lo mayormente recomendado es usar otros modulos, propiedades e <i>Styles</i> de <abbr title="Cascading Styles Sheets">CSS</abbr>, como por ejemplo <i>Grid</i> o <i>Bootstrap</i> <br>
+          Esto le va a dar una mejor estructura y <i>Style</i> a nuestra página web. <br>
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Relacionado a el ejemplo anterior, <strong>NUNCA</strong> debemos usar un <i>display: flex;</i> en todos los <i>containers</i> o <i>divs</i> de nuestra página web <br>
+          Esto puede dar errores en el <i>Style</i> y depronto una página web menos eficiente <br>
+          Lo mejor es ver <strong>si al usar <i>Flexbox</i> en un <i>container</i>, este soluciona, ayuda o mejora el <i>Style</i></strong> del container <br>
+          (Teniendo en cuenta los posibles usos del modulo de <i>Flexbox</i> y el Underlying Concept) <br>
+          Se deberia usar <i>Flexbox</i> en ese <i>container</i>, si no ayuda pero daña o perjudica a el <i>style</i> lo mejor es no usarlo <br>
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Otro ejemplo totalmente diferente, es por terminos de compatibilidad <br>
+          Esto es importante, ya que si tu página usa <i>Flexbox</i> o alguna tecnologia nueva como <i>Grid</i>, <i>Bootstrap 4</i>, <i>Varibles en CSS</i> <br>
+          Tu página web no va a funcionar en algunos navegadores, esto va a perjudicar a los usuarios que <br>
+          usan navegadores de antaño o que no soportan estas tecnologias, por eso si tu página web tiene mucho trafico de <abbr title="Intenet Explorer 8">IE8</abbr> & <abbr title="Internet Explorer 9">IE9</abbr>, deberias usar <br>
+          propiedades como <i>float</i> o no usar <i>Flexbox</i> y tecnologias nuevas (o talvez usar las insufribles tablas)<br>
+        </p>
+
+        <div class="content-source">
+          <img class="content-source__img content-source--FlexboxSupports__img" src="./src/img/FlexboxSupports.jpg" alt="Imagen demostrando en que plataformas se puede usar Flexbox de un forma nativa">
+          <br>
+          <span class="source-text">
+            <cite class="source-text__quote">"Soporte de Flexbox en diferentes Navegadores"</cite>
+            Información dada por
+            <a class="source-text__link" href="https://www.w3.org/TR/css-flexbox-1/#box-model" target="_blank">Can I Use ___?</a>
+          </span>
+        </div>
+
       </div>
     </article>
   </section>
@@ -340,6 +408,15 @@
 <!-- Footer -->
 <footer>
   <!-- Not Yet -->
+
+  <!-- 
+    Resources and Sources of this work :
+    - https://torquemag.io/2020/02/flexbox-tutorial/#genesis-nav-primary 
+    - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    - https://bitsofco.de/6-reasons-to-start-using-flexbox/
+    - https://www.w3.org/TR/css-flexbox-1/
+    - https://brolik.com/blog/when-to-use-flexbox/
+  -->
 </footer>
 </body>
 </html>

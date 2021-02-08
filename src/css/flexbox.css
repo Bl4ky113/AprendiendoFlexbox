@@ -166,6 +166,12 @@
   font-weight: 1000;
   text-decoration: underline #1510dd solid 1px;
 }
+.main-section .section-article .article-content .content-paragraph--semiTitle {
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 800;
+}
 .main-section .section-article .article-content .content-list {
   width: 70%;
   margin: 0 20px;

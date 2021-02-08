@@ -223,7 +223,16 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
      font-weight: 1000;
      text-decoration: underline $color_base1 solid 1px;
     }
+
    }
+   
+    .content-paragraph--semiTitle {
+     padding: 5px;
+     padding-left: 10px;
+
+     font-size: 18px;
+     font-weight: 800;
+    }
 
    /* -- List of the Article -- */
 

@@ -225,7 +225,7 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
     }
 
    }
-   
+
     .content-paragraph--semiTitle {
      padding: 5px;
      padding-left: 10px;
@@ -366,6 +366,12 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
      height: 212px;
     }
 
+    /* Flexbox Supports on Diferents Browsers */
+    .content-source--FlexboxSupports__img {
+     width: 800px;
+     height: 200px;
+    }
+
     /* ---- Text/Cite/Quotes on Sources ---- */
     .source-text {
      border: 2px solid $color_dark1;
@@ -378,7 +384,6 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 
      color: $color_black1;
      font-size: 12px;
-     text-shadow: $shadow_text--light-bottomRight;
      font-weight: 200;
 
      .source-text__quote {

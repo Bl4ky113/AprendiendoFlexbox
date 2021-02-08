@@ -245,6 +245,7 @@
   /* ---- Images ---- */
   /* All Images */
   /* The Underlying Concept Image */
+  /* Flexbox Supports on Diferents Browsers */
   /* ---- Text/Cite/Quotes on Sources ---- */
 }
 .main-section .section-article .article-content .content-source .content-source__img {
@@ -265,6 +266,10 @@
   width: 512px;
   height: 212px;
 }
+.main-section .section-article .article-content .content-source .content-source--FlexboxSupports__img {
+  width: 800px;
+  height: 200px;
+}
 .main-section .section-article .article-content .content-source .source-text {
   border: 2px solid #000080;
   padding-top: 5px;
@@ -274,7 +279,6 @@
   background-color: #fefefe;
   color: #000;
   font-size: 12px;
-  text-shadow: 1px 1px 3px #343434;
   font-weight: 200;
 }
 .main-section .section-article .article-content .content-source .source-text .source-text__quote {

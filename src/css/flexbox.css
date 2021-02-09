@@ -24,7 +24,8 @@
   /* Flex Properties */
   display: flex;
   /* Flex */
-  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* ----- Index of the Document ----- */
@@ -36,6 +37,8 @@
   padding: 10px;
   background-color: #1510dd;
   box-shadow: 2px 1px 5px #343434;
+  /* Flex Properties */
+  align-self: flex-start;
   /* Title of the Index */
   /*List of the index */
 }
@@ -95,7 +98,10 @@
 
 /* ----- Sections - Flexbox ----- */
 .main-section {
+  width: 70%;
   margin: 5px 10px;
+  /* Flex Properties */
+  align-self: stretch;
   /* Articles in the section */
 }
 .main-section .section-article {
@@ -126,6 +132,7 @@
   padding-bottom: 10px;
   padding-right: 5px;
   padding-left: 5px;
+  text-align: justify;
   /* -- Paragraphs in the Article -- */
   /* -- List of the Article -- */
   /* -- External Sources of the Article -- */

@@ -54,7 +54,11 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 
  /* Flex Properties */
  display: flex; /* Flex */
- align-items: flex-start;
+
+ flex-direction: row;
+ flex-wrap: wrap;
+
+ 
 }
 
 /* ----- Index of the Document ----- */
@@ -69,6 +73,9 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
  background-color: $color_base1;
 
  box-shadow: $shadow_box-bottomRight;
+
+ /* Flex Properties */
+ align-self: flex-start;
 
  /* Title of the Index */
  .main-index__title {
@@ -153,7 +160,12 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 /* ----- Sections - Flexbox ----- */
 
 .main-section {
+ width: 70%;
+
  margin: 5px 10px;
+
+ /* Flex Properties */
+ align-self: stretch;
 
  /* Articles in the section */ 
  .section-article{
@@ -189,6 +201,8 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
    padding-bottom: 10px;
    padding-right: 5px;
    padding-left: 5px;
+
+   text-align: justify;
 
    /* -- Paragraphs in the Article -- */
    

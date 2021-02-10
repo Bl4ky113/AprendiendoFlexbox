@@ -6,7 +6,7 @@
 /* Shadows Propertys */
 /* ----- __The Document__ ----- */
 .doc {
-  background-color: #f0f0f0;
+  background-color: #fefefe;
 }
 
 /* ---------- Main Section ---------- */
@@ -66,7 +66,10 @@
 }
 .main-index .index-list .list-object {
   width: 75%;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-right: 5px;
+  margin-left: 5px;
   border-radius: 0.25em;
   padding-inline-start: 10px;
   background-color: #000080;
@@ -75,25 +78,57 @@
   text-shadow: 2px 2px 2px #343434;
   box-shadow: 2px 1px 5px #343434;
   transition: 500ms width, border-radius, background-color, color, text-decoration;
-  /* Links in the List Object "li < a" */
+  /* Links in the List Object */
 }
 .main-index .index-list .list-object:hover {
   width: 90%;
   border-radius: 0.5em;
-  background-color: #80d4ff;
-  color: #000080;
-  text-decoration: underline #000080 solid;
+  text-decoration: underline #1510dd solid;
 }
 .main-index .index-list .list-object:hover .list-object__link {
-  color: inherit;
   text-decoration: inherit;
 }
 .main-index .index-list .list-object .list-object__link {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  color: #f0f0f0;
+  color: #fefefe;
   display: inline-block;
+  transition: 500ms width, border-radius, background-color, color, text-decoration;
+}
+.main-index .index-list .list-miniList {
+  width: 75%;
+  margin-inline-start: 5px;
+  border-radius: 0.5em;
+  padding: 5px;
+  background-color: #000080;
+  box-shadow: 2px 1px 5px #343434;
+  transition: 500ms width, border-radius, background-color, color, text-decoration;
+}
+.main-index .index-list .list-miniList .miniList-object {
+  width: 70%;
+  margin: 5px;
+  margin-inline-start: 20px;
+  border-radius: 0.25em;
+  background-color: #1510dd;
+  color: #f0f0f0;
+  list-style-position: inside;
+  text-shadow: 2px 2px 2px #343434;
+  transition: 500ms width, border-radius, background-color, color, text-decoration;
+}
+.main-index .index-list .list-miniList .miniList-object:hover {
+  width: 90%;
+  border-radius: 0.5em;
+  text-decoration: underline #80d4ff solid;
+}
+.main-index .index-list .list-miniList .miniList-object:hover .miniList-object__link {
+  text-decoration: underline #80d4ff solid;
+}
+.main-index .index-list .list-miniList .miniList-object .miniList-object__link {
+  margin: 5px;
+  padding: 5px;
+  color: #fefefe;
+  transition: 500ms width, border-radius, background-color, color, text-decoration;
 }
 
 /* ----- Sections - Flexbox ----- */

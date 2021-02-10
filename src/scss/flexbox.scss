@@ -30,11 +30,12 @@ $shadow_box-bottomRight: 2px 1px 5px $color_black2;
 
 $shadow_text-bottomRight: 2px 2px 2px $color_black2;
 $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
+$shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
 
 /* ----- __The Document__ ----- */
 
 .doc {
- background-color: $color_white2;
+ background-color: $color_white1;
 }
 
 /* ---------- Main Section ---------- */
@@ -111,7 +112,10 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
   .list-object {
    width: 75%;
 
-   margin: 5px;
+   margin-top: 5px;
+   margin-bottom: 0;
+   margin-right: 5px;
+   margin-left: 5px;
    border-radius: 0.25em;
    padding-inline-start: 10px;
 
@@ -120,9 +124,8 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
    color: $color_white2;
    list-style-position: inside;
    text-shadow: $shadow_text-bottomRight;
-
+   
    box-shadow: $shadow_box-bottomRight;
-
    transition: 500ms $transition_links;
 
    &:hover{
@@ -130,27 +133,73 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 
     border-radius: 0.5em;
 
-    background-color: $color_light1;
-
-    color: $color_dark1;
-    text-decoration: underline $color_dark1 solid;
+    text-decoration: underline $color_base1 solid;
 
     .list-object__link{
-     color: inherit;
      text-decoration: inherit;
     }
    }
 
-   /* Links in the List Object "li < a" */
+   /* Links in the List Object */
    .list-object__link {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
 
-    color: $color_white2;
+    color: $color_white1;
 
     display:inline-block;
+    transition: 500ms $transition_links;
+   }
+  }
+  
+  .list-miniList {
+   width: 75%;
 
+   margin-inline-start: 5px;
+   border-radius: 0.5em;
+   padding: 5px;
+
+   background-color: $color_dark1;
+      
+   box-shadow: $shadow_box-bottomRight;
+   transition: 500ms $transition_links; 
+
+   .miniList-object {
+    width: 70%;
+
+    margin: 5px;
+    margin-inline-start: 20px ; 
+    border-radius: 0.25em;
+    
+    background-color: $color_base1;
+    
+    color: $color_white2;
+    list-style-position: inside;
+    text-shadow: $shadow_text-bottomRight;
+
+    transition: 500ms $transition_links;
+
+    &:hover {
+     width: 90%;
+
+     border-radius: 0.5em;
+
+     text-decoration: underline $color_light1 solid;
+
+     .miniList-object__link {
+      text-decoration: inherit;
+     }
+    }
+    
+    .miniList-object__link {
+     margin: 5px;
+     padding: 5px;
+
+     color: $color_white1;
+
+     transition: 500ms $transition_links;
+    }
    }
   }
  }
@@ -237,7 +286,6 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
      font-weight: 1000;
      text-decoration: underline $color_base1 solid 1px;
     }
-
    }
 
     .content-paragraph--title {

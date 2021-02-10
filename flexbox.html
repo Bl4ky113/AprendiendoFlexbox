@@ -19,7 +19,8 @@
 <main class="doc-main">
   <!-- index -->
   <nav class="main-index">
-    <h2 class="main-index__title">Indice</h2>
+    <h2 class="main-index__title">Indice <i>Flexbox</i></h2>
+    <!-- Lista inicio -->
     <ol class="index-list">
       <h3 class="index-list__title">Inicio</h3>
       <li class="list-object">
@@ -34,6 +35,27 @@
       <li class="list-object">
         <a class="list-object__link" href="#CuandoUsar-inicio">Cuando usar <i>Flexbox</i></a>
       </li>
+    </ol>
+    <!-- Lista Propiedades -->
+    <ol class="index-list">
+      <h3 class="index-list__title">Propiedades</h3>
+      <li class="list-object">
+        <a class="list-object__link" href="#Flexbox-propiedades">Propiedades <i>Flexbox</i></a>
+      </li>
+      <li class="list-object">
+        <a class="list-object__link" href="#Container-propiedades">Propiedades <i>Flex-Container</i></a>
+      </li>
+      <ol class="list-miniList">
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
+        </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
+        </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
+        </li>
+      </ol>
     </ol>
   </nav>
 
@@ -505,7 +527,7 @@
 
           <!-- Web Forms -->
           <li class="list-object">
-            <h3 class="list-object__title">Formuarios en Páginas web</h3>
+            <h3 class="list-object__title">Formuarios en Páginas web<span> : </span></h3>
             <p class="object-paragraph">
               Al contenter varios <i>inputs</i>, es muy importante tener organizados y con un buen <i>Style</i> para el usuario
               Por eso en estos formularios es una buena idea usar <i>Flexbox</i>
@@ -529,9 +551,48 @@
 
   <!-- Propiedades de Flexbox -->
   <section class="main-section">
+    <!-- Inicio de Propiedades Flexbox -->
     <article class="section-article">
-      <h2 class="section-article__title">Propiedades para el <i>Flex-Container</i></h2>
+      <h2 id="Flexbox-propiedades" class="section-article__title">Propiedades de <i>Flexbox</i></h2>
       <div class="article-content">
+        <p class="content-paragraph">
+          Como hemos visto y mencionado anteriormente, <i>Flexbox</i> es un modulo de <abbr title="Cascading Styles Sheets">CSS</abbr>, 
+          por lo tanto no consta de una sola propiedad. De hecho <i>Flexbox</i> cuenta con propiedades para el <i>Flex-Container</i> como para los <i>Flex-Items</i>. 
+          Dandole varias oportunidades para combinar y hacer un grandioso <i>Stlye</i>.
+        </p>
+        <p class="content-paragraph">
+          Entonces despues de haber visto casí toda la teoria de <i>Flexbox</i>, vamos a ver las propiedades de <i>Flexbox</i>, cuales podran usar el maximo del
+          <i>UnderLying Concept</i>, cosa que nos va a ayudar mucho a el momento de usar <i>Flexbox</i>
+        </p>
+        <p class="content-paragraph">
+          Cabe aclarar que algunas propiedades no estan disponibles en algunos navegadores, entonces debemos ser cautelosos al momento de usar <i>Flexbox</i>
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Como en <i>Flexbox</i>, tenemos propiedades de <i>Flex-Container</i> y de sus <i>Flex-Items</i>, primero vamos a ver que <i>properties</i> tienen los <i>Flex-Containers</i>
+          y depues vamos a ver las <i>properties</i> tienen los <i>Flex-Items</i>
+        </p>
+      </div>
+    </article>
+    <!-- Properties Display -->
+    <article class="section-article">
+      <h2 id="Container-propiedades" class="section-article__title"><i>Properties Flex-Container</i></h2>
+      <div class="article-content">
+        <p class="content-paragraph">
+          Como sabemos el <i>Flex-Container</i>, es el contenedor que va a mantener e organizar los <i>Flex-Items</i>, 
+          entonces este va a tener propiedades que solo van a modificar el orden & <i>Style</i> de los <i>Flex-Items</i>
+        </p>
+
+        <br>
+
+        <p id="Container_Display-propiedades" class="content-paragraph content-paragraph--title">
+          Display :
+        </p>
+        <p class="content-paragraph">
+          Hello
+        </p>
 
       </div>
     </article>

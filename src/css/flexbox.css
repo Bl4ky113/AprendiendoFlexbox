@@ -221,6 +221,7 @@
   font-weight: 450;
   line-height: 1.25;
   background-color: #fefefe;
+  text-align: justify;
   /* Semantic Tags in the paragraph */
 }
 .main-section .section-article .article-content .content-list .list-object .object-paragraph abbr {

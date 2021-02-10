@@ -520,8 +520,7 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     /* ---- Style in CSS's Code ---- */
 
     /* All the code */
-    .code-css {
-    }
+    .code-css {}
 
     /* CSS Selectors */
     .css-selector {
@@ -748,6 +747,42 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
      justify-content: space-around;
      align-items: center;
     }
+   }
+
+   /* Example flex-direction */
+   .direction-example {
+    padding: 5px;
+
+    /* Flex Properties */
+    display: flex;
+    justify-content: space-around;
+
+    .example-flexContainer {
+     width: 200px;
+     height: 200px;
+
+     border: 2px dashed $color_dark2;
+     padding: 10px;
+
+     /* Flex Properties */
+     display: flex;
+
+     justify-content: space-evenly;
+
+     .flexContainer-flexItems {
+      width: 40px;
+      height: 40px;
+     }
+
+     .light {background-color: $color_light2;}
+     .base {background-color: $color_base2;}
+     .dark {background-color: $color_dark2;}
+    }
+
+    .row {flex-direction: row;}
+    .row-reverse {flex-direction: row-reverse;}
+    .column {flex-direction: column;}
+    .column-reverse {flex-direction: column-reverse;}
    }
 
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */

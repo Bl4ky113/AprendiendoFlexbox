@@ -50,7 +50,7 @@
           <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
         </li>
         <li class="miniList-object">
-          <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
+          <a class="miniList-object__link" href="#Container_FlexDirection-propiedades">Flex-Direction</a>
         </li>
         <li class="miniList-object">
           <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
@@ -668,14 +668,118 @@
         </p>
 
         <br>
-        
+
         <!-- Property flex-direction -->
-        <p class="content-paragraph content-paragraph--title">
+        <p id="Container_FlexDirection-propiedades" class="content-paragraph content-paragraph--title">
           flex-direction: 
         </p>
         <p class="content-paragraph">
-
+          La <i>Property</i> <i>flex-direction</i>, se usa para determinar la dirección del <i>main-axis</i>, del <i>UnderLying Concpet</i>.
+          Esta determina a que dirección se van a desplegar los <i>Flex-Items</i> del <i>Flex-Container</i>, pudiendo hacer una columna o un fila para nuestros <i>Flex-Items</i>.
         </p>
+
+        <p class="content-paragraph">
+          Generalmente se despliegan horizontalmente de izquierda a derecha los <i>Flex-Items</i> del <i>Flex-Container</i>.
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Los posibles valores y sus usos que tiene <i>flex-direction</i>, son :
+        </p>
+
+        <br>
+
+        <ul class="content-list">
+          <!-- Horizontal Normal -->
+          <li class="list-object">
+           <h3 class="list-object__title">flex-direction <span>:</span> row <span>;</span></h3> 
+           <p class="object-paragraph">
+            Los <i>Flex-Items</i>, se desplegaran de Izquierda a Derecha horizontalmente, 
+            puede desplegarse de Derecha a Izquierda si tiene la propiedad <i>"rtl"</i>
+           </p>
+          </li>
+
+          <br>
+
+          <!-- Horizontal Alrevez -->
+          <li class="list-object">
+            <h3 class="list-object__title">flex-direction <span>:</span> row-reverse <span>;</span></h3>
+            <p class="object-paragraph">
+              Los <i>Flex-Items</i>, se desplegaran de Derecha a Izquiera horizontalmente (alrevez que <i>row</i>),
+              puede desplegarse de Izquierda a Derecha si tiene la propiedad <i>"rtl"</i>.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Vertical Normal -->
+          <li class="list-object">
+            <h3 class="list-object__title">flex-direction <span>:</span> column <span>;</span></h3>
+            <p class="object-paragraph">
+              Los <i>Flex-Items</i>, se desplegaran de Arriba a Abajo, en una Columna.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Vertical Alrevez -->
+          <li class="list-object">
+            <h3 class="list-object__title">flex-direction <span>:</span> column-reverse <span>;</span></h3>
+            <p class="object-paragraph">
+              Los <i>Flex-Items</i>, se desplegaran de Abajo a Arrbia, en una Columna.
+            </p>
+          </li>
+        </ul>
+
+        <br>
+
+        <!-- Ejemplo flex-direction:-->
+        <div class="content-example direction-example">
+          <!-- flex-direction: row -->
+          <div class="example-flexContainer row">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <!-- flex-direction: row-reverse -->
+          <div class="example-flexContainer row-reverse">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <!-- flex-direction: column -->
+          <div class="example-flexContainer column">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <!-- flex-direction: column-reverse -->
+          <div class="example-flexContainer column-reverse">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+        </div>
+        <!-- Codigo Ejemplo flex-direction -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+              <br>
+              <span class="css-properties code--idented-1">flex-direction: row | row-reverse | column | column-reverse;</span> <span class="css-commentary">/* Cambiar la Direccion del "Main-Axis" */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
+
       </div>
     </article>
   </section>

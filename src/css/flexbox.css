@@ -182,6 +182,7 @@
   /* Example of Center Align Things using FlexBox */
   /* Example of Aligning Inline-Elements with Flexbox */
   /* Example Block Flexbox */
+  /* Example flex-direction */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -540,6 +541,46 @@
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
+}
+.main-section .section-article .article-content .direction-example {
+  padding: 5px;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-around;
+}
+.main-section .section-article .article-content .direction-example .example-flexContainer {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #002266;
+  padding: 10px;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-section .section-article .article-content .direction-example .example-flexContainer .flexContainer-flexItems {
+  width: 40px;
+  height: 40px;
+}
+.main-section .section-article .article-content .direction-example .example-flexContainer .light {
+  background-color: #b3f0ff;
+}
+.main-section .section-article .article-content .direction-example .example-flexContainer .base {
+  background-color: #009dff;
+}
+.main-section .section-article .article-content .direction-example .example-flexContainer .dark {
+  background-color: #002266;
+}
+.main-section .section-article .article-content .direction-example .row {
+  flex-direction: row;
+}
+.main-section .section-article .article-content .direction-example .row-reverse {
+  flex-direction: row-reverse;
+}
+.main-section .section-article .article-content .direction-example .column {
+  flex-direction: column;
+}
+.main-section .section-article .article-content .direction-example .column-reverse {
+  flex-direction: column-reverse;
 }
 
 /* ----- RESTART CSS ----- */

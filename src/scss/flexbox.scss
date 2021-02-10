@@ -240,6 +240,22 @@ $shadow_text--light-bottomRight: 1px 1px 3px $color_black2;
 
    }
 
+    .content-paragraph--title {
+     width: 20%;
+
+     border: 2px solid $color_base1;
+     border-radius: 0.25em;
+     border-top-right-radius: 1em;
+     padding: 2px;
+     padding-inline-start: 15px;
+
+     background-color: $color_dark1;
+
+     color: $color_white1;
+     font-size: 20px;
+     font-weight: 1000;
+    }
+
     .content-paragraph--semiTitle {
      padding: 5px;
      padding-left: 10px;

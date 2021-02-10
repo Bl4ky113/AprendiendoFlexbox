@@ -173,6 +173,18 @@
   font-weight: 1000;
   text-decoration: underline #1510dd solid 1px;
 }
+.main-section .section-article .article-content .content-paragraph--title {
+  width: 20%;
+  border: 2px solid #1510dd;
+  border-radius: 0.25em;
+  border-top-right-radius: 1em;
+  padding: 2px;
+  padding-inline-start: 15px;
+  background-color: #000080;
+  color: #fefefe;
+  font-size: 20px;
+  font-weight: 1000;
+}
 .main-section .section-article .article-content .content-paragraph--semiTitle {
   padding: 5px;
   padding-left: 10px;

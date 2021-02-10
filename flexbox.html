@@ -576,7 +576,8 @@
         </p>
       </div>
     </article>
-    <!-- Properties Display -->
+
+    <!-- Properties Container -->
     <article class="section-article">
       <h2 id="Container-propiedades" class="section-article__title"><i>Properties Flex-Container</i></h2>
       <div class="article-content">
@@ -587,13 +588,94 @@
 
         <br>
 
+        <!-- Property Display -->
         <p id="Container_Display-propiedades" class="content-paragraph content-paragraph--title">
-          Display :
+          Display : 
         </p>
         <p class="content-paragraph">
-          Hello
+          Esta <i>Property</i>, define el <i>Container</i> que vamos a usar para manejar <i>Flexbox</i>, y poder manejar 
+          <i>Flexbox</i> tambien en los <i>Items</i> de este <i>Container</i>. Esto nos permite usar todo el modulo de <i>Flexbox</i>
+          en estos elementos, si no tenemos definido que el <i>Container</i> esta usando <i>Flexbox</i>, ningun atributo del modulo va a funcionar
+        </p>
+        <br>
+        <p class="content-paragraph">
+          Los valores que puede tener esta <i>property</i> (para usar Flexbox), son:
         </p>
 
+        <br>
+
+        <ul class="content-list">
+          <!-- BoxModel : ON-->
+          <li class="list-object">
+            <h3 class="list-object__title">display<span>: </span> flex <span> ; </span></h3>
+            <p class="object-paragraph">
+              El <i>Container</i> se convierte en un <i>Flex-Container</i> <strong>que respeta las reglas del <i>Box-Model</i>.</strong>
+              Como un <i>Div</i> o un elemento <i>block</i>
+            </p>
+          </li>
+
+          <br>
+          <!-- BoxMode : OFF -->
+          <li class="list-object">
+            <h3 class="list-object__title">display<span>: </span> inline-flex <span> ; </span></h3>
+            <p class="object-paragraph">
+              El <i>Container</i> se convierte en un <i>Flex-Container</i> <strong>que respeta (tambien) las reglas del <i>Box-Model</i>.</strong> 
+              Solo que las respeta como un Elemento <i>inline-block</i>
+            </p>
+          </li>
+        </ul>
+
+        <!-- Ejemplo Display: flex / inline-flex -->
+        <div class="content-example blockFlex-example">
+          
+          <div class="example-flexContainer blockFlex">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          
+          <div class="example-flexContainer inlineFlex">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+        </div>
+        <!-- Codigo del Ejemplo de Display -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <span class="css-commentary">/* O inline-flex */</span> <br>
+              <br>
+              <span class="css-properties code--idented-1">justify-content: space-around;</span> <span class="css-commentary">/* Alinear en el centro del "main axis" */</span> <br>
+              <span class="css-properties code--idented-1">align-items: center;</span> <span class="css-commentary">/* Alinear en el centro del "cross axis" */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
+
+        <br>
+
+        <p class="content-paragraph">
+          Como podemos ver, las unicas diferencias este <i>display: flex;</i> y <i>display: inline-flex;</i>
+          son las mismas diferencias que <i>display: block;</i> y <i>display: inline-block;</i>
+        </p>
+
+        <br>
+        
+        <!-- Property flex-direction -->
+        <p class="content-paragraph content-paragraph--title">
+          flex-direction: 
+        </p>
+        <p class="content-paragraph">
+
+        </p>
       </div>
     </article>
   </section>

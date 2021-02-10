@@ -708,6 +708,47 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
 
    }
 
+   /* Example Block Flexbox */
+
+   .blockFlex-example {
+    padding: 5px;
+
+    /* Flex Properties */
+    display: flex;
+    justify-content: space-evenly;
+
+    .example-flexContainer {
+     height: 200px;
+     width: 200px;
+     
+     border: 2px dashed $color_dark2;
+
+     .flexContainer-flexItems {
+      height: 50px;
+      width: 50px; 
+
+      background-color: $color_dark2;
+     }
+    }
+
+    /* Normal Flex display */
+    .blockFlex {
+     /* Flex Properties */
+     display: flex;
+
+     justify-content: space-around;
+     align-items: center;
+    } 
+
+    /* Inline Flex display */
+    .inlineFlex {
+     /* Flex Properties */
+     display: inline-flex;
+
+     justify-content: space-around;
+     align-items: center;
+    }
+   }
 
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 

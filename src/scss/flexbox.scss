@@ -820,6 +820,42 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     .wrap-reverse {flex-wrap: wrap-reverse;}
    }
 
+   .flow-example {
+    padding: 5px;
+
+    /* Flex Properties */
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    .example-flexContainer {
+     width: 200px;
+     height: 200px;
+
+     border: 2px dashed $color_dark2;
+
+     /* Flex Properties */
+     display: flex;
+
+     justify-content: space-around;
+     align-items: center;
+
+     .flexContainer-flexItems {
+      height: 30px;
+      width: 30px;
+     }
+
+     .light {background-color: $color_light2;}
+     .base {background-color: $color_base2;}
+     .dark {background-color: $color_dark2;}
+    }
+
+    .row-nowrap {flex-flow: row nowrap;}
+    .row-wrap {flex-flow: row wrap;}
+    .column-nowrap {flex-flow: column nowrap;}
+    .column-wrap {flex-flow: column wrap;}
+   }
+
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 
   } 

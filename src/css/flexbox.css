@@ -620,6 +620,47 @@
 .main-section .section-article .article-content .wrap-example .wrap-reverse {
   flex-wrap: wrap-reverse;
 }
+.main-section .section-article .article-content .flow-example {
+  padding: 5px;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.main-section .section-article .article-content .flow-example .example-flexContainer {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #002266;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-section .section-article .article-content .flow-example .example-flexContainer .flexContainer-flexItems {
+  height: 30px;
+  width: 30px;
+}
+.main-section .section-article .article-content .flow-example .example-flexContainer .light {
+  background-color: #b3f0ff;
+}
+.main-section .section-article .article-content .flow-example .example-flexContainer .base {
+  background-color: #009dff;
+}
+.main-section .section-article .article-content .flow-example .example-flexContainer .dark {
+  background-color: #002266;
+}
+.main-section .section-article .article-content .flow-example .row-nowrap {
+  flex-flow: row nowrap;
+}
+.main-section .section-article .article-content .flow-example .row-wrap {
+  flex-flow: row wrap;
+}
+.main-section .section-article .article-content .flow-example .column-nowrap {
+  flex-flow: column nowrap;
+}
+.main-section .section-article .article-content .flow-example .column-wrap {
+  flex-flow: column wrap;
+}
 
 /* ----- RESTART CSS ----- */
 body, section, article, ol, ul, h1, h2, h3, h4, h5, h6, p {

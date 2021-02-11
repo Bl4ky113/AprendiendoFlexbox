@@ -906,8 +906,81 @@
           </code>
         </div>
 
-
         <!-- Property Flow -->
+        <p class="content-paragraph content-paragraph--title">flex-flow</p>
+
+        <p class="content-paragraph">
+          La <i>Property</i> <i>flex-flow</i>, se usa como un <i>short hand</i> de las <i>Properties</i>: <i>flex-direction</i> y <i>flex-wrap</i>
+        </p>
+
+        <p class="content-paragraph">
+          Como este es un <i>shorthand</i>, todos los posibles valores de la <i>property</i> <i>flex-flow</i>, son los posibles valores de <i>flex-direction</i> y <i>flex-wrap</i>
+        </p>
+
+        <!-- Ejemplo flex-Flow -->
+        <div class="content-example flow-example">
+          <div class="example-flexContainer row-nowrap">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer row-wrap">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer column-nowrap">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer column-wrap">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+        </div>
+        <!-- Codigo Ejemplo Flex-Flow-->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+              <span class="css-properties code--idented-1">flex-flow: row | row-reverse | column | column-reverse ||| nowrap | wrap | wrap-reverse;</span> <span class="css-commentary">/* Propiedades de <i>Flex-Direction</i> y <i>Flex-Wrap</i> */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
 
         <!-- Property Justify-Content -->
 

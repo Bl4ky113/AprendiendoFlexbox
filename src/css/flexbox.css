@@ -183,6 +183,7 @@
   /* Example of Aligning Inline-Elements with Flexbox */
   /* Example Block Flexbox */
   /* Example flex-direction */
+  /* Example flex-wrap */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -581,6 +582,43 @@
 }
 .main-section .section-article .article-content .direction-example .column-reverse {
   flex-direction: column-reverse;
+}
+.main-section .section-article .article-content .wrap-example {
+  padding: 5px;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-around;
+}
+.main-section .section-article .article-content .wrap-example .example-flexContainer {
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #002266;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+}
+.main-section .section-article .article-content .wrap-example .example-flexContainer .flexContainer-flexItems {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+.main-section .section-article .article-content .wrap-example .example-flexContainer .light {
+  background-color: #b3f0ff;
+}
+.main-section .section-article .article-content .wrap-example .example-flexContainer .base {
+  background-color: #009dff;
+}
+.main-section .section-article .article-content .wrap-example .example-flexContainer .dark {
+  background-color: #002266;
+}
+.main-section .section-article .article-content .wrap-example .nowrap {
+  flex-wrap: nowrap;
+}
+.main-section .section-article .article-content .wrap-example .wrap {
+  flex-wrap: wrap;
+}
+.main-section .section-article .article-content .wrap-example .wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 /* ----- RESTART CSS ----- */

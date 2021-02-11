@@ -53,7 +53,19 @@
           <a class="miniList-object__link" href="#Container_FlexDirection-propiedades">Flex-Direction</a>
         </li>
         <li class="miniList-object">
-          <a class="miniList-object__link" href="#Container_Display-propiedades">Display</a>
+          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
+        </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
+        </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
+        </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
+        </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
         </li>
       </ol>
     </ol>
@@ -649,7 +661,6 @@
               <br>
               <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
               <span class="css-properties code--idented-1">display: flex;</span> <span class="css-commentary">/* O inline-flex */</span> <br>
-              <br>
               <span class="css-properties code--idented-1">justify-content: space-around;</span> <span class="css-commentary">/* Alinear en el centro del "main axis" */</span> <br>
               <span class="css-properties code--idented-1">align-items: center;</span> <span class="css-commentary">/* Alinear en el centro del "cross axis" */</span> <br>
             <span class="css-bracket">}</span> <br>
@@ -770,7 +781,6 @@
               <br>
               <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
               <span class="css-properties code--idented-1">display: flex;</span> <br>
-              <br>
               <span class="css-properties code--idented-1">flex-direction: row | row-reverse | column | column-reverse;</span> <span class="css-commentary">/* Cambiar la Direccion del "Main-Axis" */</span> <br>
             <span class="css-bracket">}</span> <br>
             <br>
@@ -780,6 +790,130 @@
           </code>
         </div>
 
+        <!-- Property Warp -->
+        <p id="Container_FlexWarp-propiedades" class="content-paragraph content-paragraph--title">
+          flex-warp: 
+        </p>
+
+        <p class="content-paragraph">
+          La <i>Property</i> <i>flex-warp</i>, se usa para habilitar que los <i>Flex-Items</i>, puedan acomodarse, organizarce o desplegarse en más de una linea del contenedor.
+          Ya que en defecto, los <i>Flex-Items</i> sino pueden acomodarse en el <i>Flex-Container</i>, ya sea por muchos <i>Flex-Items</i> o por que son muuy grandes.
+          Estos se modificaron su <i>Style</i>, para que se puedan organizar todos en el <i>Flex-Container</i>
+        </p>
+        <p class="content-paragraph">
+          Resumido la <i>Property</i> <i>Flex-Direction</i> se usa para que los <i>Flex-Items</i> no se modifiquen para acomodarse todos en un <i>Flex-Container</i>, 
+          sino que el <i>Flex-Container</i> se modificara para que los <i>Flex-Items</i> puedan organizarce sin modificar su <i>Style</i>.
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          El cambio que hace <i>Flex-Direction</i> en el <i>Underlying Concept</i>, es que agrega multiples lineas, donde los <i>Flex-Items</i> pueden ser desplegados.
+          Así dando más espacio para los <i>Flex-Items</i> al agrandar el <i>Flex-Container</i>
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Los Posibles valores que puede tener <i>Flex-Direction</i>, son :
+        </p>
+
+        <br>
+
+        <ul class="content-list">
+          <!-- No Lineas -->
+          <li class="list-object">
+            <h3 class="list-object__title">flex-direction<span>: </span> nowrap <span>;</span></h3>
+            <p class="object-paragraph">
+              <i>Property</i> por defecto. Los <i>Flex-Items</i> solo se desplegaran y se organizaran en una sola linea dentro del <i>Flex-Container</i>,
+              El <i>Flex-Container</i> no va a cambiar su <i>Style</i>, mientras que los <i>Flex-Items</i> si cambiaran su <i>Style</i>
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Lineas -->
+          <li class="list-object">
+            <h3 class="list-object__title">flex-direction<span>: </span> wrap <span>;</span></h3>
+            <p class="object-paragraph">
+              Los <i>Flex-Items</i> se desplegaran y se organizaran en 2 o más lineas dentro del <i>Flex-Container</i>, 
+              Se organizaran desde el <i>cross-start</i> hasta el <i>cross-end</i>, o alrevez, 
+              esto depende del <i>flex-direction</i> o la direccion que tenga el <i>main-axis</i> en el <i>Flex-Container</i>
+            </p>
+          </li>
+
+          <br>
+          
+          <!-- Lineas Alrevez -->
+          <li class="list-object">
+            <h3 class="list-object__title">flex-direction<span>: </span> wrap-reverse <span>;</span></h3>
+            <p class="object-paragraph">
+              Los <i>Flex-Items</i> se desplegaran y se organizaran en 2 o más lineas dentro del <i>Flex-Container</i>,
+              Se organizaran desde el <i>cross-end</i> hasta el <i>cross-start</i>, o alrevez, 
+              esto depende del <i>flex-direction</i> o la direccion que tenga el <i>main-axis</i> en el <i>Flex-Container</i>
+            </p>
+          </li>
+        </ul>
+
+        <!-- Ejemplo flex-wrap -->
+        <div class="content-example wrap-example">
+          <div class="example-flexContainer nowrap">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer wrap">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer wrap-reverse">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+        </div>
+        <!-- Codigo Ejemplo Flex-Wrap -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+              <span class="css-properties code--idented-1">flex-wrap: nowrap | wrap | wrap-reverse;</span> <span class="css-commentary">/* Habilitar el multiples lineas en el <i>Flex-Container</i> */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
+
+
+        <!-- Property Flow -->
+
+        <!-- Property Justify-Content -->
+
+        <!-- Property Align-Items -->
+
+        <!-- Property Align Content -->
       </div>
     </article>
   </section>

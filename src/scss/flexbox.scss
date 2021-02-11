@@ -785,6 +785,41 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     .column-reverse {flex-direction: column-reverse;}
    }
 
+   /* Example flex-wrap */
+   .wrap-example {
+    padding: 5px;
+
+    /* Flex Properties */
+    display: flex;
+    justify-content: space-around;
+    
+    .example-flexContainer {
+     width: 200px;
+     height: 200px;
+
+     border: 2px dashed $color_dark2;
+
+     /* Flex Properties */
+     display: flex;
+
+     align-items: center;
+
+     .flexContainer-flexItems {
+      width: 40px;
+      height: 40px;
+      
+      margin: 5px;
+     }
+     .light {background-color: $color_light2;}
+     .base {background-color: $color_base2;}
+     .dark {background-color: $color_dark2;}
+    }
+
+    .nowrap {flex-wrap: nowrap;}
+    .wrap {flex-wrap: wrap;}
+    .wrap-reverse {flex-wrap: wrap-reverse;}
+   }
+
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 
   } 

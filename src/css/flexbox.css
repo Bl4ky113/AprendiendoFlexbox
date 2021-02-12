@@ -661,6 +661,58 @@
 .main-section .section-article .article-content .flow-example .column-wrap {
   flex-flow: column wrap;
 }
+.main-section .section-article .article-content .justifyContent-example {
+  padding: 5px;
+  /* Flex Properties */
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.main-section .section-article .article-content .justifyContent-example .example-flexContainer {
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  border: 2px dashed #002266;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+}
+.main-section .section-article .article-content .justifyContent-example .example-flexContainer .flexContainer-flexItems {
+  width: 35px;
+  height: 35px;
+  border-radius: 0.5em;
+  background-color: #002266;
+}
+.main-section .section-article .article-content .justifyContent-example .flex-start {
+  justify-content: flex-start;
+}
+.main-section .section-article .article-content .justifyContent-example .flex-end {
+  justify-content: flex-end;
+}
+.main-section .section-article .article-content .justifyContent-example .start {
+  justify-content: start;
+}
+.main-section .section-article .article-content .justifyContent-example .end {
+  justify-content: end;
+}
+.main-section .section-article .article-content .justifyContent-example .right {
+  justify-content: right;
+}
+.main-section .section-article .article-content .justifyContent-example .left {
+  justify-content: left;
+}
+.main-section .section-article .article-content .justifyContent-example .center {
+  justify-content: center;
+}
+.main-section .section-article .article-content .justifyContent-example .space-between {
+  justify-content: space-between;
+}
+.main-section .section-article .article-content .justifyContent-example .space-around {
+  justify-content: space-around;
+}
+.main-section .section-article .article-content .justifyContent-example .space-evenly {
+  justify-content: space-evenly;
+}
 
 /* ----- RESTART CSS ----- */
 body, section, article, ol, ul, h1, h2, h3, h4, h5, h6, p {

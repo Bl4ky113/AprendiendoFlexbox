@@ -56,10 +56,10 @@
           <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
         </li>
         <li class="miniList-object">
-          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
+          <a class="miniList-object__link" href="#Container_FlexFlow-propiedades">Flex-Flow</a>
         </li>
         <li class="miniList-object">
-          <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
+          <a class="miniList-object__link" href="#Container_JustifyContent-propiedades">Justify-Content</a>
         </li>
         <li class="miniList-object">
           <a class="miniList-object__link" href="#Container_FlexWarp-propiedades">Flex-Warp</a>
@@ -907,7 +907,7 @@
         </div>
 
         <!-- Property Flow -->
-        <p class="content-paragraph content-paragraph--title">flex-flow</p>
+        <p id="Container_FlexFlow-propiedades" class="content-paragraph content-paragraph--title">flex-flow</p>
 
         <p class="content-paragraph">
           La <i>Property</i> <i>flex-flow</i>, se usa como un <i>short hand</i> de las <i>Properties</i>: <i>flex-direction</i> y <i>flex-wrap</i>
@@ -983,6 +983,194 @@
         </div>
 
         <!-- Property Justify-Content -->
+        <p id="Container_JustifyContent-propiedades" class="content-paragraph content-paragraph--title">
+          justify-content:
+        </p>
+
+        <p class="content-paragraph">
+          La <i>Property</i> <i>Justify-Content</i>, se usa para alinear, organizar y desplegar los <i>Flex-Items</i> en el <i>main-axis</i> del <i>Flex-Container</i>
+          Esto ayuda a poder darle un control para poder alinear, centrar los <i>Flex-Items</i>, podiendo darles espaciados especificos o especiales
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Los posibles valores de <i>justify-content</i>, son: 
+        </p>
+
+        <ul class="content-list">
+          <!-- Izquierda o Derecha (Underlying Concept) -->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> flex-start(defecto) | flex-end <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organizan los <i>Flex-Items</i> iniciando en el <i>main-start</i> o el <i>main-end</i> del <i>Flex-Container</i>.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Izquierda o Derecha (Writing Mode) -->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> start | end <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organizan los <i>Flex-Items</i> iniciando en el inicio del <i>Writing-Mode</i> del <i>Flex-Container</i> o un <i>Container</i> generico.
+            </p>
+          </li>
+
+          <br>
+          
+          <!-- Izquierda o Derecha (Flex-Direction) -->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> right | left <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organizan los <i>Flex-Items</i> iniciando en el lado especificado del <i>Flex-Container</i>. 
+              Si el <i>flex-direction</i> no es pararelo a los lados del <i>Flex-Container</i>, simplemente actuara como <i>Start</i> u <i>End</i>.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- CENTRO [ CENTRO (CENTRO) CENTRO {CENTRO} CENTRO ]-->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> center <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organizan los <i>Flex-Items</i> en el centro del <i>Flex-Container</i>, sin tener espacio entre los <i>Flex-Items</i> si son varios.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Espaciado Entre todo -->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> space-between <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organizan los <i>Flex-Items</i> entre todo el espacio del <i>main-start</i> y el <i>main-end</i>. 
+              Osea no queda espacio disponible en el <i>Flex-Container</i>, solo los <i>Flex-Items</i> y los espacios entre ellos.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Espaciado entre todo el main-axis -->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> space-around <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organiza los <i>Flex-Items</i> en todo el <i>main-axis</i> de una forma equitativa, osea se divide el largo del <i>main-axis</i> entre 
+              la cantidad de los <i>Flex-Items</i> y se organizan entre estos espacios.
+            </p>
+          </li>
+
+          <br>
+
+          <!-- Espaciado Igual pa' todos -->
+          <li class="list-object">
+            <h3 class="list-object__title">justify-content<span>:</span> space-evenly <span>;</span></h3>
+            <p class="object-paragraph">
+              Se organiza los <i>Flex-Items</i> en el <i>main-axis</i> de una forma de que todos los <i>Flex-Items</i> tengan el mismo espaciado entre todos,
+              sin importar el ancho, alto u otros.
+            </p>
+          </li>
+        </ul>
+
+        <br>
+
+        <p class="content-paragraph">
+          <strong>Ojo</strong>, algunas propiedades no son soportadas por todos los navegadores, entonces debes tener cuidado al momento de usar <i>Justify-Content</i>
+        </p>
+        
+        <br>
+
+        <!-- Ejemplo justify-content -->
+        <div class="content-example justifyContent-example">
+          <div class="example-flexContainer flex-start">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer flex-end">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer start">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer end">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer right">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer left">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer center">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer space-between">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer space-around">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+          <div class="example-flexContainer space-evenly">
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+            <div class="flexContainer-flexItems"></div>
+          </div>
+        </div>
+        <!-- Codigo Ejemplo justify-content -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+              <span class="css-commentary code--idented-1">/* Alinear los <i>Flex-Items</i> en el <i>main-axis</i> */</span> <br>
+              <span class="css-properties code--idented-1">justify-content: flex-start | flex-end | start | end | right | left | center | space-around | space-between | space-evenly;</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
 
         <!-- Property Align-Items -->
 

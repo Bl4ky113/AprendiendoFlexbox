@@ -856,6 +856,47 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     .column-wrap {flex-flow: column wrap;}
    }
 
+   .justifyContent-example {
+    padding: 5px;
+
+    /* Flex Properties */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    .example-flexContainer {
+     height: 200px;
+     width: 200px;
+
+     margin: 5px;
+     border: 2px dashed $color_dark2;
+
+     /* Flex Properties */
+     display: flex;
+     align-items: center;
+
+     .flexContainer-flexItems {
+      width: 35px;
+      height: 35px;
+
+      border-radius: 0.5em;
+
+      background-color: $color_dark2;
+     }
+    }
+
+    .flex-start {justify-content: flex-start;}
+    .flex-end {justify-content: flex-end;}
+    .start {justify-content: start;}
+    .end {justify-content: end;}
+    .right {justify-content: right;}
+    .left {justify-content: left;}
+    .center {justify-content: center;}
+    .space-between {justify-content: space-between;}
+    .space-around {justify-content: space-around;}
+    .space-evenly {justify-content: space-evenly;}
+   }
+
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 
   } 

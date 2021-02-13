@@ -178,12 +178,17 @@
   */
   /* ----- Code Examples ----- */
   /* ----- Examples ----- */
+  /* ALL Examples */
   /* Example of Flex Container and Flex Items */
   /* Example of Center Align Things using FlexBox */
   /* Example of Aligning Inline-Elements with Flexbox */
-  /* Example Block Flexbox */
+  /* Example of spaced Align with flexbox */
+  /* Example Display Flexbox */
   /* Example flex-direction */
-  /* Example flex-wrap */
+  /* Example of flex-wrap */
+  /* Example of Flex-Flow */
+  /* Example of Justify Content */
+  /* Example of align-items */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -401,52 +406,67 @@
   margin-bottom: 5px;
   margin-right: auto;
   margin-left: auto;
-}
-.main-section .section-article .article-content .flexContainer-example .example-flexContainer {
-  width: 100%;
-  height: 200px;
-  margin: 5px;
-  border: 5px solid #002266;
-  border-radius: 0.5em;
-  padding: 10px;
-  background-color: #002266;
+  padding: 5px;
   /* Flex Properties */
   display: flex;
+  align-items: center;
+  flex-flow: row wrap;
   justify-content: space-evenly;
+}
+.main-section .section-article .article-content .content-example .example-flexContainer {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 4px dashed #000080;
+  border-radius: 0.5em;
+  background-color: #fefefe;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-section .section-article .article-content .content-example .example-flexContainer .light {
+  background-color: #b3f0ff;
+}
+.main-section .section-article .article-content .content-example .example-flexContainer .base {
+  background-color: #009dff;
+}
+.main-section .section-article .article-content .content-example .example-flexContainer .dark {
+  background-color: #002266;
+}
+.main-section .section-article .article-content .content-example--list {
+  padding: 10px;
+  background-color: #fefefe;
+}
+.main-section .section-article .article-content .flexContainer-example .example-flexContainer {
+  width: 700px;
+  height: 200px;
+  border: 5px solid #002266;
+  border-radius: 0.5em;
+  background-color: #002266;
 }
 .main-section .section-article .article-content .flexContainer-example .example-flexContainer .example-flexContainer__text {
   color: #fefefe;
   font-size: 32px;
   text-shadow: 2px 2px 2px #343434;
-  /* Flex Properties */
-  align-self: center;
 }
 .main-section .section-article .article-content .flexContainer-example .example-flexContainer .flexContainer-flexItems {
-  width: 150px;
+  height: 100px;
+  width: 100px;
   padding: 5px;
+  border-radius: 0.5em;
   background-color: #1510dd;
   /* Flex Properties */
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .main-section .section-article .article-content .flexContainer-example .example-flexContainer .flexContainer-flexItems .flexContainer-flexItems__text {
   color: #fefefe;
   font-weight: bold;
   text-shadow: 2px 2px 2px #343434;
-  display: block;
-  /* Flex Properties */
-  align-self: center;
-}
-.main-section .section-article .article-content .centerAlign-example {
-  padding: 10px;
-  background-color: #fefefe;
 }
 .main-section .section-article .article-content .centerAlign-example .example-flexContainer {
-  height: 200px;
-  border: 4px dashed #000080;
-  border-radius: 0.5em;
-  padding: 10px;
-  background-color: #fefefe;
   /* Flex Properties */
   display: flex;
   justify-content: center;
@@ -458,78 +478,27 @@
   border-radius: 0.25em;
   background-color: #80d4ff;
 }
-.main-section .section-article .article-content .inlineAlign-example {
-  padding: 10px;
-  background-color: #fefefe;
-}
-.main-section .section-article .article-content .inlineAlign-example .example-flexContainer {
-  height: 200px;
-  border: 4px dashed #000080;
-  border-radius: 0.5em;
-  background-color: #fefefe;
-  /* Flex Properties */
-  display: flex;
-  align-items: center;
-}
-.main-section .section-article .article-content .inlineAlign-example .flexContainer-flexItem {
+.main-section .section-article .article-content .inlineAlign-example .example-flexContainer .flexContainer-flexItem {
   width: 20%;
   height: 50px;
   display: inline;
 }
-.main-section .section-article .article-content .inlineAlign-example .light {
-  background-color: #b3f0ff;
-}
-.main-section .section-article .article-content .inlineAlign-example .base {
-  background-color: #009dff;
-}
-.main-section .section-article .article-content .inlineAlign-example .dark {
-  background-color: #002266;
-}
-.main-section .section-article .article-content .spacedAlign-example {
-  padding: 10px;
-  background-color: #fefefe;
-}
 .main-section .section-article .article-content .spacedAlign-example .example-flexContainer {
-  height: 200px;
-  border: 4px dashed #000080;
-  border-radius: 0.5em;
-  background-color: #fefefe;
   /* Flex Properties */
-  display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .main-section .section-article .article-content .spacedAlign-example .example-flexContainer .flexContainer-flexItems {
-  height: 50px;
-  width: 50px;
-  border-radius: 0.75em;
-}
-.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .light {
-  background-color: #b3f0ff;
-}
-.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .dark {
-  background-color: #002266;
-}
-.main-section .section-article .article-content .spacedAlign-example .example-flexContainer .base {
-  background-color: #009dff;
+  height: 25px;
+  width: 25px;
+  border-radius: 0.25em;
 }
 .main-section .section-article .article-content .blockFlex-example {
-  padding: 5px;
-  /* Flex Properties */
-  display: flex;
-  justify-content: space-evenly;
   /* Normal Flex display */
   /* Inline Flex display */
-}
-.main-section .section-article .article-content .blockFlex-example .example-flexContainer {
-  height: 200px;
-  width: 200px;
-  border: 2px dashed #002266;
 }
 .main-section .section-article .article-content .blockFlex-example .example-flexContainer .flexContainer-flexItems {
   height: 50px;
   width: 50px;
-  background-color: #002266;
 }
 .main-section .section-article .article-content .blockFlex-example .blockFlex {
   /* Flex Properties */
@@ -543,17 +512,7 @@
   justify-content: space-around;
   align-items: center;
 }
-.main-section .section-article .article-content .direction-example {
-  padding: 5px;
-  /* Flex Properties */
-  display: flex;
-  justify-content: space-around;
-}
 .main-section .section-article .article-content .direction-example .example-flexContainer {
-  width: 200px;
-  height: 200px;
-  border: 2px dashed #002266;
-  padding: 10px;
   /* Flex Properties */
   display: flex;
   justify-content: space-evenly;
@@ -561,15 +520,6 @@
 .main-section .section-article .article-content .direction-example .example-flexContainer .flexContainer-flexItems {
   width: 40px;
   height: 40px;
-}
-.main-section .section-article .article-content .direction-example .example-flexContainer .light {
-  background-color: #b3f0ff;
-}
-.main-section .section-article .article-content .direction-example .example-flexContainer .base {
-  background-color: #009dff;
-}
-.main-section .section-article .article-content .direction-example .example-flexContainer .dark {
-  background-color: #002266;
 }
 .main-section .section-article .article-content .direction-example .row {
   flex-direction: row;
@@ -583,33 +533,10 @@
 .main-section .section-article .article-content .direction-example .column-reverse {
   flex-direction: column-reverse;
 }
-.main-section .section-article .article-content .wrap-example {
-  padding: 5px;
-  /* Flex Properties */
-  display: flex;
-  justify-content: space-around;
-}
-.main-section .section-article .article-content .wrap-example .example-flexContainer {
-  width: 200px;
-  height: 200px;
-  border: 2px dashed #002266;
-  /* Flex Properties */
-  display: flex;
-  align-items: center;
-}
 .main-section .section-article .article-content .wrap-example .example-flexContainer .flexContainer-flexItems {
   width: 40px;
   height: 40px;
   margin: 5px;
-}
-.main-section .section-article .article-content .wrap-example .example-flexContainer .light {
-  background-color: #b3f0ff;
-}
-.main-section .section-article .article-content .wrap-example .example-flexContainer .base {
-  background-color: #009dff;
-}
-.main-section .section-article .article-content .wrap-example .example-flexContainer .dark {
-  background-color: #002266;
 }
 .main-section .section-article .article-content .wrap-example .nowrap {
   flex-wrap: nowrap;
@@ -620,34 +547,9 @@
 .main-section .section-article .article-content .wrap-example .wrap-reverse {
   flex-wrap: wrap-reverse;
 }
-.main-section .section-article .article-content .flow-example {
-  padding: 5px;
-  /* Flex Properties */
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-.main-section .section-article .article-content .flow-example .example-flexContainer {
-  width: 200px;
-  height: 200px;
-  border: 2px dashed #002266;
-  /* Flex Properties */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 .main-section .section-article .article-content .flow-example .example-flexContainer .flexContainer-flexItems {
   height: 30px;
   width: 30px;
-}
-.main-section .section-article .article-content .flow-example .example-flexContainer .light {
-  background-color: #b3f0ff;
-}
-.main-section .section-article .article-content .flow-example .example-flexContainer .base {
-  background-color: #009dff;
-}
-.main-section .section-article .article-content .flow-example .example-flexContainer .dark {
-  background-color: #002266;
 }
 .main-section .section-article .article-content .flow-example .row-nowrap {
   flex-flow: row nowrap;
@@ -661,27 +563,10 @@
 .main-section .section-article .article-content .flow-example .column-wrap {
   flex-flow: column wrap;
 }
-.main-section .section-article .article-content .justifyContent-example {
-  padding: 5px;
-  /* Flex Properties */
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-.main-section .section-article .article-content .justifyContent-example .example-flexContainer {
-  height: 200px;
-  width: 200px;
-  margin: 5px;
-  border: 2px dashed #002266;
-  /* Flex Properties */
-  display: flex;
-  align-items: center;
-}
 .main-section .section-article .article-content .justifyContent-example .example-flexContainer .flexContainer-flexItems {
   width: 35px;
   height: 35px;
   border-radius: 0.5em;
-  background-color: #002266;
 }
 .main-section .section-article .article-content .justifyContent-example .flex-start {
   justify-content: flex-start;
@@ -712,6 +597,39 @@
 }
 .main-section .section-article .article-content .justifyContent-example .space-evenly {
   justify-content: space-evenly;
+}
+.main-section .section-article .article-content .alignItems-example .example-flexContainer .flexContainer-flexItems {
+  width: 60px;
+  height: 60px;
+}
+.main-section .section-article .article-content .alignItems-example .flex-start {
+  align-items: flex-start;
+}
+.main-section .section-article .article-content .alignItems-example .flex-end {
+  align-items: flex-end;
+}
+.main-section .section-article .article-content .alignItems-example .center {
+  align-items: center;
+}
+.main-section .section-article .article-content .alignItems-example .stretch {
+  align-items: stretch;
+}
+.main-section .section-article .article-content .alignItems-example .stretch .flexContainer-flexItems {
+  height: auto;
+}
+.main-section .section-article .article-content .alignItems-example .baseline {
+  height: auto;
+  align-items: baseline;
+}
+.main-section .section-article .article-content .alignItems-example .baseline .hello {
+  font-size: 20px;
+}
+.main-section .section-article .article-content .alignItems-example .baseline .hi {
+  font-size: 40px;
+}
+.main-section .section-article .article-content .alignItems-example .baseline .goodbye {
+  color: #fefefe;
+  font-size: 10px;
 }
 
 /* ----- RESTART CSS ----- */

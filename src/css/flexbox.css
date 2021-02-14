@@ -189,6 +189,7 @@
   /* Example of Flex-Flow */
   /* Example of Justify Content */
   /* Example of align-items */
+  /* Example of Align-Content */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -630,6 +631,35 @@
 .main-section .section-article .article-content .alignItems-example .baseline .goodbye {
   color: #fefefe;
   font-size: 10px;
+}
+.main-section .section-article .article-content .alignContent-example .example-flexContainer {
+  /* Flex Properties */
+  flex-flow: row wrap;
+}
+.main-section .section-article .article-content .alignContent-example .example-flexContainer .flexContainer-flexItems {
+  width: 40px;
+  height: 40px;
+}
+.main-section .section-article .article-content .alignContent-example .flex-start {
+  align-content: flex-start;
+}
+.main-section .section-article .article-content .alignContent-example .flex-end {
+  align-content: flex-end;
+}
+.main-section .section-article .article-content .alignContent-example .center {
+  align-content: center;
+}
+.main-section .section-article .article-content .alignContent-example .stretch {
+  align-content: stretch;
+}
+.main-section .section-article .article-content .alignContent-example .space-around {
+  align-content: space-around;
+}
+.main-section .section-article .article-content .alignContent-example .space-between {
+  align-content: space-between;
+}
+.main-section .section-article .article-content .alignContent-example .space-evenly {
+  align-content: space-evenly;
 }
 
 /* ----- RESTART CSS ----- */

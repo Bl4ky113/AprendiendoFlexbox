@@ -945,7 +945,7 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     }
    }
 
-   /* Exaple of Flex-Shrink */
+   /* Example of Flex-Shrink */
    .flexShrink-example {
 
     .example-flexContainer {
@@ -958,6 +958,29 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
      .shrink1 {flex-shrink: 1;}
      .shrink2 {flex-shrink: 2;}
      .shrink5 {flex-shrink: 5;}
+    }
+   }
+
+   /* Example of Flex-Basis */
+   .flexBasis-example {
+
+    .example-flexContainer{
+
+     .flexContainer-flexItems {
+      width: 60px;
+      height: 60px;
+
+      /* Flex Properties */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+
+     .dark {font-size: 14px;}
+
+     .auto {flex-basis: auto;}
+     .number {flex-basis: 80px;}
+     .zero {flex-basis: 0;}
     }
    }
 

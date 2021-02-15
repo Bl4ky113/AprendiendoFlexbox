@@ -1773,8 +1773,43 @@
           Flex-Basis: 
         </p>
         <p class="content-paragraph">
-          La <i>Property</i> <i>flex-basis</i>, se usa
+          La <i>Property</i> <i>flex-basis</i>, se usa para definir el tamaño de un <i>Flex-Item</i> antes de que el espacio de un <i>Flex-Container</i>
+          sea repartido por otros <i>Flex-Items</i> o en espaciados del <i>Flex-Container</i>. Dependiendo de la direccion del <i>main-axis</i> se define el
+          ancho o el alto del <i>Flex-Item</i>.
         </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Se puede usar diferentes medidas de tamaño para el ancho o el alto, como <i>px</i> o <i>%</i>, pero tambien se puede usar el valor <i>auto</i>, para
+          que el tome las medidas de <i>width</i> o <i>height</i> del mismo <i>Flex-Item</i>. Se puede usar el valor <i>0</i>, haciendo que el <i>Flex-Item</i> defina su ancho o alto a el contenido que tenga adentro. 
+        </p>
+
+        <!-- Ejemplo Flex-Basis -->
+        <div class="content-example flexBasis-example">
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems auto light">Hello</div>
+            <div class="flexContainer-flexItems zero base">Hi</div>
+            <div class="flexContainer-flexItems number dark">GoodBye</div>
+          </div>
+        </div>
+        <!-- Codigo Flex-Bases-->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+              <span class="css-properties code--idented-1">flex-basis: <'medida'> | auto;</span>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
 
         <!-- Property ___FLEX___ -->
 

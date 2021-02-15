@@ -194,7 +194,8 @@
   /* Example of Align-Content */
   /* Example of Order */
   /* Example of Flex-Grow */
-  /* Exaple of Flex-Shrink */
+  /* Example of Flex-Shrink */
+  /* Example of Flex-Basis */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -745,6 +746,26 @@
 }
 .main-section .section-article .article-content .flexShrink-example .example-flexContainer .shrink5 {
   flex-shrink: 5;
+}
+.main-section .section-article .article-content .flexBasis-example .example-flexContainer .flexContainer-flexItems {
+  width: 60px;
+  height: 60px;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .section-article .article-content .flexBasis-example .example-flexContainer .dark {
+  font-size: 14px;
+}
+.main-section .section-article .article-content .flexBasis-example .example-flexContainer .auto {
+  flex-basis: auto;
+}
+.main-section .section-article .article-content .flexBasis-example .example-flexContainer .number {
+  flex-basis: 80px;
+}
+.main-section .section-article .article-content .flexBasis-example .example-flexContainer .zero {
+  flex-basis: 0;
 }
 
 /* ----- RESTART CSS ----- */

@@ -192,6 +192,8 @@
   /* Example of Justify Content */
   /* Example of align-items */
   /* Example of Align-Content */
+  /* Example of Order */
+  /* Example of Flex-Grow */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -454,12 +456,15 @@
 }
 .main-section .section-article .article-content .content-example .example-flexContainer .light {
   background-color: #b3f0ff;
+  color: #343434;
 }
 .main-section .section-article .article-content .content-example .example-flexContainer .base {
   background-color: #009dff;
+  color: #000;
 }
 .main-section .section-article .article-content .content-example .example-flexContainer .dark {
   background-color: #002266;
+  color: #fefefe;
 }
 .main-section .section-article .article-content .content-example--list {
   padding: 10px;
@@ -686,6 +691,46 @@
 }
 .main-section .section-article .article-content .alignContent-example .space-evenly {
   align-content: space-evenly;
+}
+.main-section .section-article .article-content .order-example .example-flexContainer {
+  width: 400px;
+}
+.main-section .section-article .article-content .order-example .example-flexContainer .flexContainer-flexItems {
+  width: 80px;
+  height: 80px;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .section-article .article-content .order-example .example-flexContainer .num1 {
+  order: 1;
+}
+.main-section .section-article .article-content .order-example .example-flexContainer .num2 {
+  order: 2;
+}
+.main-section .section-article .article-content .order-example .example-flexContainer .num3 {
+  order: 3;
+}
+.main-section .section-article .article-content .order-example .example-flexContainer .num4 {
+  order: 4;
+}
+.main-section .section-article .article-content .flexGrow-example .example-flexContainer .flexContainer-flexItems {
+  width: 40px;
+  height: 40px;
+  /* Flex-Properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .section-article .article-content .flexGrow-example .example-flexContainer .grow1 {
+  flex-grow: 1;
+}
+.main-section .section-article .article-content .flexGrow-example .example-flexContainer .grow2 {
+  flex-grow: 2;
+}
+.main-section .section-article .article-content .flexGrow-example .example-flexContainer .grow5 {
+  flex-grow: 5;
 }
 
 /* ----- RESTART CSS ----- */

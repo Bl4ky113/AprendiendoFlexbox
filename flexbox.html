@@ -1530,7 +1530,155 @@
           cambiar el tamaño de los <i>Flex-Items</i> individualmente, organizarlos individualmente & organizarlos en una lista.
         </p>
 
-        <!-- Property  -->
+        <br>
+
+        <!-- Property Order -->
+        <p class="content-paragraph content-paragraph--title">
+          Order :
+        </p>
+        <p class="content-paragraph">
+          La <i>Property</i> <i>Order</i>, se usa para organizar los <i>Flex-Items</i> en posiciones númericas, estas posiciones se generan automaticamente
+          por el código fuente de <abbr title="Hyper Text Markup Lenguage"><i>HTML</i></abbr>, pero esto los podemos modificar con esta propiedad.
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Como <i>Order</i> usa valores númericos enteros, este no tiene valores posibles, ademas de los valores globales.
+        </p>
+
+        <!-- Ejemplo de Order -->
+        <div class="content-example order-example">
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems num3 light"> Soy él 1ro. </div>
+            <div class="flexContainer-flexItems num1 dark"> Soy él 2do. </div>
+            <div class="flexContainer-flexItems num4 base"> Soy él 3ro. </div>
+            <div class="flexContainer-flexItems num2 light"> Soy él 4to. </div>
+          </div>
+        </div>
+        <!-- Codigo de Ejemplo Order -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Hyper Text Markup Lenguage">HTML</abbr></h4>
+          <code class="code-html5">
+            <span class="html5-commentary">< !-- Ejemplo de Order -- ></span> <br>
+            < <span class="html5-tag">div</span> <span class="html5-atribute">class</span>=<span class="html5-atribute--value">"flexContainer"</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems num3"</span>> <span class="html5-tag--content">Soy él 1ro.</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems num1"</span>> <span class="html5-tag--content">Soy él 2do.</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems num4"</span>> <span class="html5-tag--content">Soy él 3ro.</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems num2"</span>> <span class="html5-tag--content">Soy él 4to.</span> < /<span class="html5-tag">div</span> > <br>
+            < /<span class="html5-tag">div</span> > <br>
+          </code>
+        </div>
+        
+        <br>
+
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .num1</span> <span class="css-bracket">{</span><span class="css-properties">order: 1;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .num2</span> <span class="css-bracket">{</span><span class="css-properties">order: 2;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .num3</span> <span class="css-bracket">{</span><span class="css-properties">order: 3;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .num4</span> <span class="css-bracket">{</span><span class="css-properties">order: 4;</span><span class="css-bracket">}</span> <br>
+          </code>
+        </div>
+
+        <br>
+
+        <!-- Property Flex-Grow-->
+        <p class="content-paragraph content-paragraph--title">
+          Flex-Grow :
+        </p>
+        <p class="content-paragraph">
+          La <i>Property</i> <i>flex-grow</i>, se usa para definir si un <i>Flex-Item</i> puede agrandarse o expandirse si es necesario en el <i>Flex-Container</i>
+          Si todos los <i>Flex-Items</i> tienen definido un valor en <i>flex-grow</i> de 1, estos van a tomar el espacio restante del <i>Flex-Container</i> 
+          equitativamente, pero si un <i>Flex-Item</i> tiene un valor definido de 2, este va a tomar el doble de espacio del <i>Flex-Container</i>.
+          Tomandose el valor y el espacio que ocupa el <i>Flex-Items</i> de una forma exponencial.
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Como <i>flex-grow</i> usa valores númericos positivos, no tiene valores posibles, ademas de los valores globales. Pero tampoco no se puede usar valores
+          númericos negativos, ya que para hacer una acción contraria a <i>flex-grow</i> se deberia usar otra <i>Property</i> de los <i>Flex-Items</i>.
+        </p>
+
+        <!-- Ejemplo de Flex-Grow -->
+        <div class="content-example flexGrow-example">
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems grow1 light">grow 1</div>
+            <div class="flexContainer-flexItems grow1 base">grow 1</div>
+            <div class="flexContainer-flexItems grow1 dark">grow 1</div>
+          </div>
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems grow2 light">grow2</div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems grow5 base">GROW 5</div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+        </div>
+        <!-- Codigo de Flex-Grow -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Hyper Text Markup Lenguage">HTML</abbr></h4>
+          <code class="code-html5">
+            <span class="html5-commentary">< !-- Ejemplo de Flex-Grow -- ></span> <br>
+            < <span class="html5-tag">div</span> <span class="html5-atribute">class</span>=<span class="html5-atribute--value">"flexContainer"</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems grow1"</span>> <span class="html5-tag--content">grow 1</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems grow1"</span>> <span class="html5-tag--content">grow 1</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems grow1"</span>> <span class="html5-tag--content">grow 1</span> < /<span class="html5-tag">div</span> > <br>
+            < /<span class="html5-tag">div</span> > <br>
+          </code>
+        </div>
+
+        <br>
+
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .grow1</span> <span class="css-bracket">{</span><span class="css-properties">flex-grow: 1;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .grow2</span> <span class="css-bracket">{</span><span class="css-properties">flex-grow: 2;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .grow3</span> <span class="css-bracket">{</span><span class="css-properties">flex-grow: 3;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .grow4</span> <span class="css-bracket">{</span><span class="css-properties">flex-grow: 4;</span><span class="css-bracket">}</span> <br>
+          </code>
+        </div>
+
+        <!-- Property Flex-Shrink -->
+
+        <!-- Property Flex-Basis -->
+
+        <!-- Property ___FLEX___ -->
+
+        <!-- Property Align-Self -->
       </div>
     </article>
   </section>

@@ -84,6 +84,9 @@
         <li class="miniList-object">
           <a class="miniList-object__link" href="#Item_FlexBasis-propiedades">Flex-Basis</a>
         </li>
+        <li class="miniList-object">
+          <a class="miniList-object__link" href="#Item_Flex-propiedades">Flex</a>
+        </li>
       </ol>
     </ol>
   </nav>
@@ -1812,6 +1815,47 @@
         </div>
 
         <!-- Property ___FLEX___ -->
+        <p id="Item_Flex-propiedades" class="content-paragraph content-paragraph--title">
+          flex :
+        </p>
+        <p class="content-paragraph">
+          La <i>Property</i> <i>Flex</i> se usa como <i>shorthand</i> de <i>Flex-Grow</i>, <i>Flex-Shrink</i> y <i>Flex-Basis</i>.
+        </p>
+
+        <br>
+
+        <p class="content-paragraph">
+          Los posibles valores que tienen son iguales a los sus propias <i>Properties</i>.
+        </p>
+
+        <!-- Ejemplo de Flex -->
+        <div class="content-example flex-example">
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems grow light">Hi</div>
+            <div class="flexContainer-flexItems grow-extra base">Hi</div>
+            <div class="flexContainer-flexItems shrink dark">Hi</div>
+            <div class="flexContainer-flexItems basis-num light">Hi</div>
+            <div class="flexContainer-flexItems basis-zero base">Hi</div>
+            <div class="flexContainer-flexItems basis-auto dark">Hi</div>
+          </div>
+        </div>
+        <!-- Codigo de Ejemplo Flex -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+              <span class="css-properties code--idented-1">flex-basis: < flex-grow > | < flex-shrink > | < flex-basis >;</span>
+            <span class="css-bracket">}</span> <br>
+          </code>
+        </div>
 
         <!-- Property Align-Self -->
       </div>

@@ -984,6 +984,30 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     }
    }
 
+   /* Example of FLEX */
+   .flex-example {
+
+    .example-flexContainer{
+
+     .flexContainer-flexItems {
+      width: 20px;
+      height: 20px;
+
+      /* Flex Properties */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+
+     .grow {flex: 1 0;}
+     .grow-extra {flex: 5 0;}
+     .shrink {flex: 0 1;}
+     .basis-num {flex: 1 0 40px;}
+     .basis-zero {flex: 0 0 0;}
+     .basis-auto {flex: 0 0 auto;}
+    }
+   }
+
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 
   } 

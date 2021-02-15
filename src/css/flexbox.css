@@ -196,6 +196,7 @@
   /* Example of Flex-Grow */
   /* Example of Flex-Shrink */
   /* Example of Flex-Basis */
+  /* Example of FLEX */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -766,6 +767,32 @@
 }
 .main-section .section-article .article-content .flexBasis-example .example-flexContainer .zero {
   flex-basis: 0;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .flexContainer-flexItems {
+  width: 20px;
+  height: 20px;
+  /* Flex Properties */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .grow {
+  flex: 1 0;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .grow-extra {
+  flex: 5 0;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .shrink {
+  flex: 0 1;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .basis-num {
+  flex: 1 0 40px;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .basis-zero {
+  flex: 0 0 0;
+}
+.main-section .section-article .article-content .flex-example .example-flexContainer .basis-auto {
+  flex: 0 0 auto;
 }
 
 /* ----- RESTART CSS ----- */

@@ -2,6 +2,8 @@
 /* Base Colors */
 /* Stock Colors */
 /* Code Colors */
+/* CSS */
+/* HTML5 */
 /* Transitions porpertys */
 /* Shadows Propertys */
 /* ----- __The Document__ ----- */
@@ -356,27 +358,24 @@
   width: 90%;
   margin: 10px auto;
   border: 2px solid #000;
-  border-left: 8px solid #002266;
+  border-left: 8px solid #000080;
   padding-bottom: 10px;
   padding-left: 10px;
   background-color: #343434;
   /* ---- Style in CSS's Code ---- */
-  /* All the code */
-  /* CSS Selectors */
-  /* CSS Comments */
-  /* CSS Properties */
-  /* CSS Brackets */
+  /* All the CSS code */
+  /* All the HTML5 code */
   /* Code Indetation */
 }
 .main-section .section-article .article-content .content-code .content-code__title {
   width: 250px;
   height: 30px;
   margin-bottom: 10px;
-  border: 2px solid #000080;
+  border: 2px solid #002266;
   border-radius: 0.25em;
   border-bottom-right-radius: 1em;
   padding-inline-start: 20px;
-  background-color: #002266;
+  background-color: #000080;
   color: #f0f0f0;
   font-size: 28px;
   /* Flex Properties */
@@ -386,17 +385,44 @@
 .main-section .section-article .article-content .content-code .content-code__title abbr {
   text-decoration: none;
 }
-.main-section .section-article .article-content .content-code .css-selector {
+.main-section .section-article .article-content .content-code .code-css {
+  /* CSS Selectors */
+  /* CSS Comments */
+  /* CSS Properties */
+  /* CSS Brackets */
+}
+.main-section .section-article .article-content .content-code .code-css .css-selector {
   color: #ffd24d;
 }
-.main-section .section-article .article-content .content-code .css-commentary {
+.main-section .section-article .article-content .content-code .code-css .css-commentary {
   color: #959595;
 }
-.main-section .section-article .article-content .content-code .css-properties {
+.main-section .section-article .article-content .content-code .code-css .css-properties {
   color: #f2f2f2;
 }
-.main-section .section-article .article-content .content-code .css-bracket {
+.main-section .section-article .article-content .content-code .code-css .css-bracket {
   color: #eee;
+}
+.main-section .section-article .article-content .content-code .code-html5 {
+  /* HTML5 general stuff (<, >, =, /, etc) */
+  color: #bfbfbf;
+  /* HTML5 tags */
+  /* HTML5 Atributes */
+}
+.main-section .section-article .article-content .content-code .code-html5 .html5-tag {
+  color: #b00;
+}
+.main-section .section-article .article-content .content-code .code-html5 .html5-tag--content {
+  color: #f2f2f2;
+}
+.main-section .section-article .article-content .content-code .code-html5 .html5-atribute {
+  color: #ff8c1a;
+}
+.main-section .section-article .article-content .content-code .code-html5 .html5-atribute--value {
+  color: #66ff33;
+}
+.main-section .section-article .article-content .content-code .code-html5 .html5-commentary {
+  color: #aaa;
 }
 .main-section .section-article .article-content .content-code .code--idented-1 {
   padding-inline-start: 20px;

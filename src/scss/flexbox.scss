@@ -17,10 +17,20 @@ $color_black1: #000;
 $color_black2: #343434;
 
 /* Code Colors */
+
+/* CSS */
 $color_css-selector: #ffd24d;
 $color_css-bracket: #eee;
 $color_css-coment: #959595;
 $color_css-properties: #f2f2f2;
+
+/* HTML5 */
+$color_html5-general: #bfbfbf;
+$color_html5-tag: #b00;
+$color_html5-tag--content: #f2f2f2;
+$color_html5-atribute: #ff8c1a;
+$color_html5-atibute--value: #66ff33;
+$color_html5-commentary: #aaa;
 
 /* Transitions porpertys */
 $transition_links: width, border-radius, background-color, color, text-decoration;
@@ -485,7 +495,7 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
 
     margin: 10px auto;
     border: 2px solid $color_black1;
-    border-left: 8px solid $color_dark2;
+    border-left: 8px solid $color_dark1;
     padding-bottom: 10px;
     padding-left: 10px;
 
@@ -496,12 +506,12 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
      height: 30px;
 
      margin-bottom: 10px;
-     border: 2px solid $color_dark1;
+     border: 2px solid $color_dark2;
      border-radius: 0.25em;
      border-bottom-right-radius: 1em;
      padding-inline-start: 20px;
 
-     background-color: $color_dark2;
+     background-color: $color_dark1;
 
      color: $color_white2;
      font-size: 28px;
@@ -519,11 +529,11 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
 
     /* ---- Style in CSS's Code ---- */
 
-    /* All the code */
-    .code-css {}
-
-    /* CSS Selectors */
-    .css-selector {
+    /* All the CSS code */
+    .code-css {
+     
+     /* CSS Selectors */
+     .css-selector {
      color: $color_css-selector;
     }
     /* CSS Comments */
@@ -538,13 +548,43 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     .css-bracket {
      color: $color_css-bracket;
     }
+   }
+
+   /* All the HTML5 code */
+   .code-html5 {
+
+    /* HTML5 general stuff (<, >, =, /, etc) */
+    color: $color_html5-general;
+
+    /* HTML5 tags */
+    .html5-tag {
+     color: $color_html5-tag;
+    }
+
+    .html5-tag--content {
+     color: $color_html5-tag--content;
+    }
+
+    /* HTML5 Atributes */
+    .html5-atribute {
+     color: $color_html5-atribute;
+    }
+
+    .html5-atribute--value {
+     color: $color_html5-atibute--value;
+    }
+
+    .html5-commentary {
+     color: $color_html5-commentary;
+    }
+   }
 
     /* Code Indetation */
     .code--idented-1 {
      padding-inline-start: 20px;
     }
    }
-
+   
 
    /* ----- Examples ----- */
 

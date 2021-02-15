@@ -1673,6 +1673,78 @@
         </div>
 
         <!-- Property Flex-Shrink -->
+        <p class="content-paragraph content-paragraph--title">
+          Flex-Shrink: 
+        </p>
+        <p class="content-paragraph">
+          La <i>Property</i> <i>flex-shrink</i>, se usa para definir si un <i>Flex-Item</i> puede volver más pequeño si es necesario en el <i>Flex-Container</i>
+          Los valores de <i>flex-shrink</i> son exponenciales.
+        </p>
+        <p class="content-paragraph">
+          Como <i>flex-shrink</i> usa valores númericos positivos, no tiene valores posibles, ademas de los valores globales. Pero tampoco no se puede usar valores
+          númericos negativos, ya que para hacer una acción contraria a <i>flex-shrink</i> se deberia usar otra <i>Property</i> de los <i>Flex-Items</i>.
+        </p>
+
+        <!-- Ejemplo de Flex-Shrink -->
+        <div class="content-example flexShrink-example">
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems shrink1 light">shrink 1</div>
+            <div class="flexContainer-flexItems shrink1 base">shrink 1</div>
+            <div class="flexContainer-flexItems shrink1 dark">shrink 1</div>
+          </div>
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems shrink2 light">shrink 2</div>
+            <div class="flexContainer-flexItems base"></div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+          <div class="example-flexContainer">
+            <div class="flexContainer-flexItems light"></div>
+            <div class="flexContainer-flexItems shrink5 base">shrink 5</div>
+            <div class="flexContainer-flexItems dark"></div>
+          </div>
+        </div>
+
+        <!-- Codigo de Ejemplo Flex-Shrink -->
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Hyper Text Markup Lenguage">HTML</abbr></h4>
+          <code class="code-html5">
+            <span class="html5-commentary">< !-- Ejemplo de Flex-Shrink -- ></span> <br>
+            < <span class="html5-tag">div</span> <span class="html5-atribute">class</span>=<span class="html5-atribute--value">"flexContainer"</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems shrink1"</span>> <span class="html5-tag--content">shrink 1</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems shrink1"</span>> <span class="html5-tag--content">shrink 1</span> < /<span class="html5-tag">div</span> > <br>
+              <span class="code--idented-1"></span>< <span class="html5-tag">div</span> <span class="html5-atribute">class</span>= <span class="html5-atribute--value">"flexItems shrink1"</span>> <span class="html5-tag--content">shrink 1</span> < /<span class="html5-tag">div</span> > <br>
+            < /<span class="html5-tag">div</span> > <br>
+          </code>
+        </div>
+
+        <br>
+
+        <div class="content-code">
+          <h4 class="content-code__title"><abbr title="Cascading Stlyes Sheets">CSS</abbr></h4>
+          <code class="code-css">
+            <span class="css-selector">.flexContainer</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del contenedor */</span> <br>
+              <br>
+              <span class="css-commentary code--idented-1">/* Flex Properties */</span> <br>
+              <span class="css-properties code--idented-1">display: flex;</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .flexItems</span> <span class="css-bracket">{</span> <br>
+              <span class="css-commentary code--idented-1">/* Styles del Objeto */</span> <br>
+            <span class="css-bracket">}</span> <br>
+            <br>
+            <span class="css-selector">.flexContainer .shrink1</span> <span class="css-bracket">{</span><span class="css-properties">flex-shrink: 1;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .shrink2</span> <span class="css-bracket">{</span><span class="css-properties">flex-shrink: 2;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .shrink3</span> <span class="css-bracket">{</span><span class="css-properties">flex-shrink: 3;</span><span class="css-bracket">}</span> <br>
+            <span class="css-selector">.flexContainer .shrink4</span> <span class="css-bracket">{</span><span class="css-properties">flex-shrink: 4;</span><span class="css-bracket">}</span> <br>
+          </code>
+        </div>
+
 
         <!-- Property Flex-Basis -->
 

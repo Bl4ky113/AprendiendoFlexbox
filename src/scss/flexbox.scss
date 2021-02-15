@@ -945,6 +945,22 @@ $shadow_text--hard-bottomRight: 3px 3px 2px $color_black1;
     }
    }
 
+   /* Exaple of Flex-Shrink */
+   .flexShrink-example {
+
+    .example-flexContainer {
+
+     .flexContainer-flexItems {
+      width: 80px;
+      height: 80px;
+     }
+
+     .shrink1 {flex-shrink: 1;}
+     .shrink2 {flex-shrink: 2;}
+     .shrink5 {flex-shrink: 5;}
+    }
+   }
+
    /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 
   } 

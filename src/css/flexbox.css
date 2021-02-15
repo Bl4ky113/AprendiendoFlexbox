@@ -194,6 +194,7 @@
   /* Example of Align-Content */
   /* Example of Order */
   /* Example of Flex-Grow */
+  /* Exaple of Flex-Shrink */
   /* -/=/=/- SPACE FOR OTHER EXAMPLE -/=/=/- */
 }
 .main-section .section-article .article-content .content-paragraph {
@@ -731,6 +732,19 @@
 }
 .main-section .section-article .article-content .flexGrow-example .example-flexContainer .grow5 {
   flex-grow: 5;
+}
+.main-section .section-article .article-content .flexShrink-example .example-flexContainer .flexContainer-flexItems {
+  width: 80px;
+  height: 80px;
+}
+.main-section .section-article .article-content .flexShrink-example .example-flexContainer .shrink1 {
+  flex-shrink: 1;
+}
+.main-section .section-article .article-content .flexShrink-example .example-flexContainer .shrink2 {
+  flex-shrink: 2;
+}
+.main-section .section-article .article-content .flexShrink-example .example-flexContainer .shrink5 {
+  flex-shrink: 5;
 }
 
 /* ----- RESTART CSS ----- */
